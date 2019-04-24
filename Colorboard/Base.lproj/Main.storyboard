@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,69 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2I-eR-Wig">
+                                <rect key="frame" x="20" y="93" width="374" height="299"/>
+                                <connections>
+                                    <segue destination="IVs-zb-vf0" kind="embed" id="vIH-F4-TAV"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="how it works" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-VS-5Fg">
+                                <rect key="frame" x="139" y="432" width="136" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
+                                <rect key="frame" x="20" y="482" width="374" height="334"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">you are now in the path of the alchemist. as an alchemist, it is your duty to create gold, of course. 
+
+to do so, you are going to work with colors! 
+i mean, we do not need REAL gold, just something that looks like it! 
+
+you'll have, each day, different ingredients that you can mix to your color. 
+
+once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
+you might get a different reaction based on your result... huh</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="izG-tS-HcS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1fO-xM-weF"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Yg-5n-ZnW"/>
+                            <constraint firstItem="izG-tS-HcS" firstAttribute="top" secondItem="fRo-VS-5Fg" secondAttribute="bottom" constant="28" id="JBp-V1-i4M"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPj-WI-Zru"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="46" id="lQU-jP-RRD"/>
+                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q5T-FA-ek8"/>
+                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="v5O-2v-CH5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--Colors View Controller-->
+        <scene sceneID="m1o-HV-2Yt">
+            <objects>
+                <viewController id="IVs-zb-vf0" customClass="ColorsViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVI-Co-tb1">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="299"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-EU-j6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="4"/>
         </scene>
     </scenes>
 </document>
