@@ -28,18 +28,26 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how it works" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-VS-5Fg">
-                                <rect key="frame" x="140" y="433" width="134" height="33"/>
+                                <rect key="frame" x="140" y="419" width="134" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
-                                <rect key="frame" x="20" y="494" width="374" height="297"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-od-hub">
+                                <rect key="frame" x="157.5" y="815" width="99" height="30"/>
+                                <state key="normal" title="shall we start?"/>
+                                <connections>
+                                    <segue destination="abg-59-RFM" kind="show" id="5bB-Tj-RG3"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
+                                <rect key="frame" x="20" y="460" width="374" height="337"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="297" id="2TF-pd-ktc"/>
                                 </constraints>
-                                <mutableString key="text">you are now in the path of the Alchemist! as an alchemist, it is your duty to create gold, of course. 
+                                <string key="text">you are now in the path of the Alchemist! 
+as an alchemist, it is your duty to create gold, of course. 
 
 to do so, you are going to work with colors! 
 i mean, we do not need REAL gold, just something that looks like it! 
@@ -48,27 +56,26 @@ you'll have, each day, different ingredients that you can mix to your color.
 
 your current color is represented by the bigger circle, while your target gold color is the smaller one!
 
+each transformation has a name and a color. if this color is a circle, it will mix with your current color. if it's a square, it will overwrite your current color!
+
 once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
-you might get a different reaction based on your result... huh</mutableString>
+you might get a different reaction based on your result... huh</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-od-hub">
-                                <rect key="frame" x="158" y="815" width="99" height="30"/>
-                                <state key="normal" title="shall we start?"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1fO-xM-weF"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="4WP-Wy-8Su"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Yg-5n-ZnW"/>
-                            <constraint firstItem="izG-tS-HcS" firstAttribute="top" secondItem="fRo-VS-5Fg" secondAttribute="bottom" constant="28" id="JBp-V1-i4M"/>
+                            <constraint firstItem="izG-tS-HcS" firstAttribute="top" secondItem="fRo-VS-5Fg" secondAttribute="bottom" constant="8" id="JBp-V1-i4M"/>
+                            <constraint firstItem="f4u-od-hub" firstAttribute="top" secondItem="izG-tS-HcS" secondAttribute="bottom" constant="58" id="Jse-en-Rfc"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPj-WI-Zru"/>
                             <constraint firstItem="f4u-od-hub" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eTS-0K-aF0"/>
-                            <constraint firstItem="f4u-od-hub" firstAttribute="top" secondItem="izG-tS-HcS" secondAttribute="bottom" constant="17" id="eaN-lW-aZD"/>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kWF-bI-Vqc"/>
-                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="46" id="lQU-jP-RRD"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="32" id="lQU-jP-RRD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f4u-od-hub" secondAttribute="bottom" constant="17" id="mPK-IW-nee"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q5T-FA-ek8"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="v5O-2v-CH5"/>
                         </constraints>
@@ -120,7 +127,71 @@ you might get a different reaction based on your result... huh</mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-EU-j6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.91304347826099" y="3.683035714285714"/>
+            <point key="canvasLocation" x="1717" y="-67"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="odo-GS-LlH">
+            <objects>
+                <viewController id="abg-59-RFM" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pO2-7G-Z36">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er2-wh-aDb">
+                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="er2-wh-aDb" secondAttribute="height" multiplier="187:142" id="f03-60-gVc"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="IVs-zb-vf0" kind="embed" id="USJ-rg-w2L"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choose your starting color" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-xl-UI5">
+                                <rect key="frame" x="66.5" y="419" width="281" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFL-Ws-XcQ">
+                                <rect key="frame" x="37" y="815" width="131" height="30"/>
+                                <state key="normal" title="head to the garden"/>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3XB-vR-eQH">
+                                <rect key="frame" x="20.5" y="460" width="373" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3XB-vR-eQH" secondAttribute="height" multiplier="373:339" id="b4n-Vz-OYq"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-kb-XHf">
+                                <rect key="frame" x="258" y="815" width="113" height="30"/>
+                                <state key="normal" title="head to the park"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k9f-kb-XHf" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="6A2-YJ-aUm"/>
+                            <constraint firstItem="CIG-xl-UI5" firstAttribute="top" secondItem="er2-wh-aDb" secondAttribute="bottom" constant="32" id="Aje-kG-Q7u"/>
+                            <constraint firstItem="hfy-in-Efu" firstAttribute="bottom" secondItem="k9f-kb-XHf" secondAttribute="bottom" multiplier="1.5" constant="17" id="DLu-4N-Lhg"/>
+                            <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="Eh6-rR-MUV"/>
+                            <constraint firstItem="er2-wh-aDb" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="GFY-MV-6LA"/>
+                            <constraint firstItem="er2-wh-aDb" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="J0j-Yb-5EC"/>
+                            <constraint firstItem="3XB-vR-eQH" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="Nsp-VY-cYz"/>
+                            <constraint firstItem="3XB-vR-eQH" firstAttribute="top" secondItem="CIG-xl-UI5" secondAttribute="bottom" constant="8" id="jXn-HO-evN"/>
+                            <constraint firstItem="MFL-Ws-XcQ" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" multiplier="0.5" id="ldb-qk-WZ3"/>
+                            <constraint firstItem="3XB-vR-eQH" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="qlE-Md-aoX"/>
+                            <constraint firstItem="hfy-in-Efu" firstAttribute="bottom" secondItem="MFL-Ws-XcQ" secondAttribute="bottom" constant="17" id="x6l-yO-fj6"/>
+                            <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="xKI-xd-dtL"/>
+                            <constraint firstItem="er2-wh-aDb" firstAttribute="top" secondItem="hfy-in-Efu" secondAttribute="top" constant="60" id="yu7-C9-DKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hfy-in-Efu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFa-pl-3lt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="571.875"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="USJ-rg-w2L"/>
+    </inferredMetricsTieBreakers>
 </document>

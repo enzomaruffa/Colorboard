@@ -48,6 +48,7 @@ class ColorsViewController: UIViewController {
     }
     
     public func setSmallCircleColor(color: UIColor) {
+        print(color.cgColor)
         if color == #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) {
             smallCircle.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             smallCircle.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)

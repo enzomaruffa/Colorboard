@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479188CF227335F300E3DC81 /* PickColorViewController.swift */; };
 		479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54A62270B3CB001640C9 /* AppDelegate.swift */; };
 		479D54A92270B3CB001640C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54A82270B3CB001640C9 /* ViewController.swift */; };
 		479D54AC2270B3CB001640C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479D54AA2270B3CB001640C9 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 		479D54D52270B7CD001640C9 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54D42270B7CD001640C9 /* ColorsViewController.swift */; };
 		479D54D72271F354001640C9 /* ColorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54D62271F354001640C9 /* ColorsView.swift */; };
 		479D54DB22720416001640C9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54DA22720416001640C9 /* Player.swift */; };
+		47AB5B0F22731A7B00CF4C43 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB5B0E22731A7B00CF4C43 /* Element.swift */; };
+		47AB5B1122731DF200CF4C43 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AB5B1022731DF200CF4C43 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		479188CF227335F300E3DC81 /* PickColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickColorViewController.swift; sourceTree = "<group>"; };
 		479D54A32270B3CB001640C9 /* Colorboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D54A62270B3CB001640C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D54A82270B3CB001640C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		479D54D42270B7CD001640C9 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
 		479D54D62271F354001640C9 /* ColorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsView.swift; sourceTree = "<group>"; };
 		479D54DA22720416001640C9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		47AB5B0E22731A7B00CF4C43 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		47AB5B1022731DF200CF4C43 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				479D54D42270B7CD001640C9 /* ColorsViewController.swift */,
 				479D54D62271F354001640C9 /* ColorsView.swift */,
 				479D54DA22720416001640C9 /* Player.swift */,
+				47AB5B0E22731A7B00CF4C43 /* Element.swift */,
+				47AB5B1022731DF200CF4C43 /* UIColorExtension.swift */,
+				479188CF227335F300E3DC81 /* PickColorViewController.swift */,
 			);
 			path = Colorboard;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D54D72271F354001640C9 /* ColorsView.swift in Sources */,
+				47AB5B1122731DF200CF4C43 /* UIColorExtension.swift in Sources */,
 				479D54A92270B3CB001640C9 /* ViewController.swift in Sources */,
+				47AB5B0F22731A7B00CF4C43 /* Element.swift in Sources */,
 				479D54D52270B7CD001640C9 /* ColorsViewController.swift in Sources */,
+				479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */,
 				479D54DB22720416001640C9 /* Player.swift in Sources */,
 				479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */,
 			);
