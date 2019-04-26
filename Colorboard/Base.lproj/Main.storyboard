@@ -18,40 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2I-eR-Wig">
-                                <rect key="frame" x="20" y="93" width="374" height="299"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2I-eR-Wig">
+                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y2I-eR-Wig" secondAttribute="height" multiplier="187:142" id="zYT-ux-Yf1"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="IVs-zb-vf0" kind="embed" id="vIH-F4-TAV"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="how it works" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-VS-5Fg">
-                                <rect key="frame" x="139" y="432" width="136" height="33"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how it works" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-VS-5Fg">
+                                <rect key="frame" x="140" y="433" width="134" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
-                                <rect key="frame" x="20" y="482" width="374" height="334"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
+                                <rect key="frame" x="20" y="494" width="374" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">you are now in the path of the alchemist. as an alchemist, it is your duty to create gold, of course. 
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="297" id="2TF-pd-ktc"/>
+                                </constraints>
+                                <mutableString key="text">you are now in the path of the Alchemist! as an alchemist, it is your duty to create gold, of course. 
 
 to do so, you are going to work with colors! 
 i mean, we do not need REAL gold, just something that looks like it! 
 
 you'll have, each day, different ingredients that you can mix to your color. 
 
+your current color is represented by the bigger circle, while your target gold color is the smaller one!
+
 once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
-you might get a different reaction based on your result... huh</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+you might get a different reaction based on your result... huh</mutableString>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4u-od-hub">
+                                <rect key="frame" x="158" y="815" width="99" height="30"/>
+                                <state key="normal" title="shall we start?"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1fO-xM-weF"/>
+                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="4WP-Wy-8Su"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Yg-5n-ZnW"/>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="top" secondItem="fRo-VS-5Fg" secondAttribute="bottom" constant="28" id="JBp-V1-i4M"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPj-WI-Zru"/>
+                            <constraint firstItem="f4u-od-hub" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eTS-0K-aF0"/>
+                            <constraint firstItem="f4u-od-hub" firstAttribute="top" secondItem="izG-tS-HcS" secondAttribute="bottom" constant="17" id="eaN-lW-aZD"/>
+                            <constraint firstItem="izG-tS-HcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kWF-bI-Vqc"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="46" id="lQU-jP-RRD"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q5T-FA-ek8"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="v5O-2v-CH5"/>
@@ -68,14 +84,43 @@ you might get a different reaction based on your result... huh</string>
             <objects>
                 <viewController id="IVs-zb-vf0" customClass="ColorsViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVI-Co-tb1">
-                        <rect key="frame" x="0.0" y="0.0" width="374" height="299"/>
+                        <rect key="frame" x="0.0" y="0.0" width="373" height="283"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-xY-QXY">
+                                <rect key="frame" x="66" y="26" width="241" height="241"/>
+                                <color key="backgroundColor" red="0.56937987140000001" green="0.1380042605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uBG-xY-QXY" secondAttribute="height" multiplier="1:1" id="D3G-Zt-PUv"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-f5-16x">
+                                <rect key="frame" x="51" y="31" width="84.5" height="84.5"/>
+                                <color key="backgroundColor" red="1" green="0.80110809169999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4j-f5-16x" secondAttribute="height" multiplier="1:1" id="DQY-jV-nWq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l4j-f5-16x" firstAttribute="centerX" secondItem="EAf-Iv-f12" secondAttribute="centerX" multiplier="0.5" id="FjG-aj-bEX"/>
+                            <constraint firstItem="uBG-xY-QXY" firstAttribute="height" secondItem="VVI-Co-tb1" secondAttribute="height" multiplier="0.85" id="IL2-OX-3hZ"/>
+                            <constraint firstItem="uBG-xY-QXY" firstAttribute="centerY" secondItem="EAf-Iv-f12" secondAttribute="centerY" id="QBQ-R6-uNm"/>
+                            <constraint firstItem="l4j-f5-16x" firstAttribute="height" secondItem="VVI-Co-tb1" secondAttribute="height" multiplier="0.3" id="WXb-gT-W0U"/>
+                            <constraint firstItem="l4j-f5-16x" firstAttribute="centerY" secondItem="EAf-Iv-f12" secondAttribute="centerY" multiplier="0.5" id="YKu-4W-t4a"/>
+                            <constraint firstItem="uBG-xY-QXY" firstAttribute="centerX" secondItem="EAf-Iv-f12" secondAttribute="centerX" id="o1w-7o-Wpw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAf-Iv-f12"/>
                     </view>
+                    <connections>
+                        <outlet property="bigCircle" destination="uBG-xY-QXY" id="gKE-7F-75n"/>
+                        <outlet property="smallCircle" destination="l4j-f5-16x" id="F4y-2X-g0T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-EU-j6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="4"/>
+            <point key="canvasLocation" x="973.91304347826099" y="3.683035714285714"/>
         </scene>
     </scenes>
 </document>
