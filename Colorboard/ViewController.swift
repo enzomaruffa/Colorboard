@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("View Controller Frame: ", self.view.frame)
         // Do any additional setup after loading the view.
     }
 

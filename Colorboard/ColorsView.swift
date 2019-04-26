@@ -23,15 +23,15 @@ class ColorsView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        self.createRectangle()
+        //self.createRectangle()
         
         // Specify the fill color and apply it to the path.
         //UIColor.orange.setFill()
         //path.fill()
         
         // Specify a border (stroke) color.
-        UIColor.black.setStroke()
-        path.stroke()
+        //UIColor.black.setStroke()
+        //path.stroke()
         
     }
 

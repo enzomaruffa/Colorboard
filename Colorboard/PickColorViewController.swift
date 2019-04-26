@@ -9,14 +9,29 @@
 import UIKit
 
 class PickColorViewController: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var flowersAmount = Int.random(in: 2 ... 4)
+    var flowers : [Element]!
+    var delegatee : ColorTableDelegatee!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        flowers = Element.getRandomFlowers(amount: flowersAmount)
+        
+        delegatee = ColorTableDelegatee(elements: flowers)
+        
+        tableView.delegate = delegatee
+        tableView.dataSource = delegatee
+        
+        tableView.register(UINib(nibName: String(describing: ColorCell.self), bundle: nil), forCellReuseIdentifier: "cellColor")
 
         // Do any additional setup after loading the view.
+        
     }
     
-
     /*
     // MARK: - Navigation
 

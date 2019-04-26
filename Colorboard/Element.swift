@@ -56,8 +56,21 @@ class Element {
         self.isTypeMix = isTypeMix
     }
     
-    public static func getFlowersList() -> [Element] {
+    public static func getFlowers() -> [Element] {
         return flowersList
+    }
+    
+    public static func getRandomFlowers(amount : Int) -> [Element] {
+        let flowersAmount = amount > flowersList.count ? flowersList.count : amount
+        
+        var flowersListCopy = flowersList.shuffled()
+        var randomFlowersList : [Element] = []
+        
+        for _ in 0...flowersAmount {
+            randomFlowersList.append(flowersListCopy.popLast()!)
+        }
+        
+        return randomFlowersList
     }
     
 }

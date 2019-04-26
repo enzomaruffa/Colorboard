@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4767D16D227346A30066537E /* ColorTableDelegatee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4767D16C227346A30066537E /* ColorTableDelegatee.swift */; };
 		479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479188CF227335F300E3DC81 /* PickColorViewController.swift */; };
+		479188D322733FFE00E3DC81 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479188D122733FFE00E3DC81 /* ColorCell.swift */; };
+		479188D422733FFE00E3DC81 /* ColorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 479188D222733FFE00E3DC81 /* ColorCell.xib */; };
 		479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54A62270B3CB001640C9 /* AppDelegate.swift */; };
 		479D54A92270B3CB001640C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479D54A82270B3CB001640C9 /* ViewController.swift */; };
 		479D54AC2270B3CB001640C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 479D54AA2270B3CB001640C9 /* Main.storyboard */; };
@@ -40,7 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4767D16C227346A30066537E /* ColorTableDelegatee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTableDelegatee.swift; sourceTree = "<group>"; };
 		479188CF227335F300E3DC81 /* PickColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickColorViewController.swift; sourceTree = "<group>"; };
+		479188D122733FFE00E3DC81 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		479188D222733FFE00E3DC81 /* ColorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorCell.xib; sourceTree = "<group>"; };
 		479D54A32270B3CB001640C9 /* Colorboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		479D54A62270B3CB001640C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		479D54A82270B3CB001640C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +127,9 @@
 				47AB5B0E22731A7B00CF4C43 /* Element.swift */,
 				47AB5B1022731DF200CF4C43 /* UIColorExtension.swift */,
 				479188CF227335F300E3DC81 /* PickColorViewController.swift */,
+				479188D122733FFE00E3DC81 /* ColorCell.swift */,
+				479188D222733FFE00E3DC81 /* ColorCell.xib */,
+				4767D16C227346A30066537E /* ColorTableDelegatee.swift */,
 			);
 			path = Colorboard;
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				479D54B12270B3CC001640C9 /* LaunchScreen.storyboard in Resources */,
+				479188D422733FFE00E3DC81 /* ColorCell.xib in Resources */,
 				479D54AE2270B3CC001640C9 /* Assets.xcassets in Resources */,
 				479D54AC2270B3CB001640C9 /* Main.storyboard in Resources */,
 			);
@@ -276,8 +286,10 @@
 			files = (
 				479D54D72271F354001640C9 /* ColorsView.swift in Sources */,
 				47AB5B1122731DF200CF4C43 /* UIColorExtension.swift in Sources */,
+				479188D322733FFE00E3DC81 /* ColorCell.swift in Sources */,
 				479D54A92270B3CB001640C9 /* ViewController.swift in Sources */,
 				47AB5B0F22731A7B00CF4C43 /* Element.swift in Sources */,
+				4767D16D227346A30066537E /* ColorTableDelegatee.swift in Sources */,
 				479D54D52270B7CD001640C9 /* ColorsViewController.swift in Sources */,
 				479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */,
 				479D54DB22720416001640C9 /* Player.swift in Sources */,
