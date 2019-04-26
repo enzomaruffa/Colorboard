@@ -8,9 +8,16 @@
 
 import UIKit
 
-class PickColorViewController: UIViewController {
+protocol ElementPicker: class {
+    func didSelect(element: Element)
+}
+
+class PickColorViewController: UIViewController, ElementPicker {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var colorCirclesView: UIView!
+    
+    weak var colorView : ColorsViewController?
     
     var flowersAmount = Int.random(in: 2 ... 4)
     var flowers : [Element]!
@@ -19,9 +26,12 @@ class PickColorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        colorView = children.first as? ColorsViewController
+        
         flowers = Element.getRandomFlowers(amount: flowersAmount)
         
         delegatee = ColorTableDelegatee(elements: flowers)
+        delegatee.delegate = self
         
         tableView.delegate = delegatee
         tableView.dataSource = delegatee
@@ -32,6 +42,11 @@ class PickColorViewController: UIViewController {
         
     }
     
+    func didSelect(element: Element) {
+        let color = (colorView?.bigCircle.backgroundColor)!
+        colorView?.setBigCircleColor(color: color.toColor(element.color
+            , percentage: 50))
+    }
     /*
     // MARK: - Navigation
 

@@ -26,4 +26,8 @@ extension UIColor {
                            alpha: CGFloat(a1 + (a2 - a1) * percentage))
         }
     }
+    
+    func borderByBackground() -> UIColor {
+        return self == #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) ?  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    }
 }

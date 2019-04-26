@@ -15,11 +15,17 @@ class ColorsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        smallCircle.backgroundColor = .white
+        smallCircle.layer.borderColor = UIColor.black.cgColor
+        bigCircle.backgroundColor = .white
+        bigCircle.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
         print(self.view.frame)
         //let view = ColorsView(frame: self.view.frame)
@@ -28,35 +34,21 @@ class ColorsViewController: UIViewController {
         var radius = bigCircle.frame.height * 0.5
         bigCircle.layer.cornerRadius = radius
         bigCircle.layer.borderWidth = 2
-        setBigCircleColor(color: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
         
         radius = smallCircle.frame.height * 0.5
         smallCircle.layer.cornerRadius = radius
         smallCircle.layer.borderWidth = 2
-        setSmallCircleColor(color: #colorLiteral(red: 1, green: 0.7913135886, blue: 0, alpha: 1))
         
     }
     
     public func setBigCircleColor(color: UIColor) {
-        if color == #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) {
-            bigCircle.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            bigCircle.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        } else {
-            bigCircle.backgroundColor = color
-            bigCircle.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        }
+        bigCircle.backgroundColor = color
+        bigCircle.layer.borderColor = color.borderByBackground().cgColor
     }
     
     public func setSmallCircleColor(color: UIColor) {
-        print(color.cgColor)
-        if color == #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) {
-            smallCircle.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-            smallCircle.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        } else {
-            smallCircle.backgroundColor = color
-            smallCircle.layer.borderColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        }
-        
+        smallCircle.backgroundColor = color
+        smallCircle.layer.borderColor = color.borderByBackground().cgColor
     }
     
 

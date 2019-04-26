@@ -94,7 +94,7 @@ you might get a different reaction based on your result... huh</string>
                         <rect key="frame" x="0.0" y="0.0" width="373" height="283"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-xY-QXY">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-xY-QXY">
                                 <rect key="frame" x="66" y="26" width="241" height="241"/>
                                 <color key="backgroundColor" red="0.56937987140000001" green="0.1380042605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -151,9 +151,10 @@ you might get a different reaction based on your result... huh</string>
                                 <rect key="frame" x="258" y="815" width="113" height="30"/>
                                 <state key="normal" title="head to the park"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-dl-ajA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-dl-ajA">
                                 <rect key="frame" x="20" y="476" width="373" height="311"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er2-wh-aDb">
                                 <rect key="frame" x="20.5" y="104" width="373" height="283"/>
@@ -173,10 +174,10 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="Eh6-rR-MUV"/>
                             <constraint firstItem="er2-wh-aDb" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="GFY-MV-6LA"/>
                             <constraint firstItem="er2-wh-aDb" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="J0j-Yb-5EC"/>
+                            <constraint firstItem="MFL-Ws-XcQ" firstAttribute="top" secondItem="Kvd-dl-ajA" secondAttribute="bottom" constant="28" id="JOM-Jn-og2"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="TUF-Ac-Y1v"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="top" secondItem="CIG-xl-UI5" secondAttribute="bottom" constant="25" id="eQC-W6-qDC"/>
                             <constraint firstItem="MFL-Ws-XcQ" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" multiplier="0.5" id="ldb-qk-WZ3"/>
-                            <constraint firstItem="MFL-Ws-XcQ" firstAttribute="top" secondItem="Kvd-dl-ajA" secondAttribute="bottom" constant="27" id="oxW-x5-gzL"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="vXn-vA-HDn"/>
                             <constraint firstItem="hfy-in-Efu" firstAttribute="bottom" secondItem="MFL-Ws-XcQ" secondAttribute="bottom" constant="17" id="x6l-yO-fj6"/>
                             <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="xKI-xd-dtL"/>

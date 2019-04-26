@@ -37,9 +37,6 @@ class Element {
         let iris = Element("Iris", "", #colorLiteral(red: 0, green: 0.4784313725, blue: 1, alpha: 1), true)
         list.append(iris)
         
-        let magnolia = Element("Magnolia", "", #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1), true)
-        list.append(magnolia)
-        
         let camelia = Element("Camelia", "", #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1), true)
         list.append(camelia)
         
