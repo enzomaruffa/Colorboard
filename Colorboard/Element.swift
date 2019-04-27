@@ -8,6 +8,9 @@
 
 //Flowers reference: https://fr.dreamstime.com/votre-guide-jardin-fleurs-les-plus-populaires-du-principal-infographic-image119694056
 
+//Mushrooms reference: https://www.123rf.com/photo_56989965_stock-vector-colorful-forest-wild-collection-of-assorted-edible-mushrooms-and-toadstools-with-names-in-cartoon-st.html
+//Also: https://i.pinimg.com/474x/e4/4c/86/e44c86ed664c938b39ae97dfed5d2d4b--french-dictionary-french-colors.jpg
+
 import UIKit
 
 class Element {
@@ -72,14 +75,29 @@ class Element {
     private static func createForage() -> [Element] {
         var list : [Element] = []
         
-        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
-        list.append(red)
+        let porsini = Element("Porsini", "", #colorLiteral(red: 0.5867403746, green: 0.03480042145, blue: 0.02191970125, alpha: 1), true)
+        list.append(porsini)
         
-        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
-        list.append(green)
+        let chanterele = Element("Chanterele", "", #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), true)
+        list.append(chanterele)
         
-        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
-        list.append(blue)
+        let shitake = Element("Shitake", "", #colorLiteral(red: 0.7973647714, green: 0.4608165622, blue: 0.2528178394, alpha: 1), true)
+        list.append(shitake)
+        
+        let lactariousIndigo = Element("Lactarius Indigo", "", #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), true)
+        list.append(lactariousIndigo)
+        
+        let amanitaCaesarea = Element("Amanita Caesarea", "", #colorLiteral(red: 1, green: 0.4261223674, blue: 0, alpha: 1), true)
+        list.append(amanitaCaesarea)
+        
+        let truffle = Element("Truffle", "", #colorLiteral(red: 0.3642567992, green: 0.2104968131, blue: 0.1169642732, alpha: 1), true)
+        list.append(truffle)
+        
+        let hussulePalomet = Element("Hussule Palomet", "", #colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1), true)
+        list.append(hussulePalomet)
+        
+        let lactaireVisqueux = Element("Lactaire Visqueux", "", #colorLiteral(red: 0.4077236056, green: 0.8266885877, blue: 0.716896534, alpha: 1), true)
+        list.append(lactaireVisqueux)
         
         return list
     }
@@ -140,6 +158,23 @@ class Element {
         }
         
         return randomFlowersList
+    }
+    
+    public static func getForage() -> [Element] {
+        return forageList
+    }
+    
+    public static func getRandomForage(amount : Int) -> [Element] {
+        let forageAmount = amount > forageList.count ? forageList.count : amount
+        
+        var forageListCopy = forageList.shuffled()
+        var randomForageList : [Element] = []
+        
+        for _ in 0...forageAmount {
+            randomForageList.append(forageListCopy.popLast()!)
+        }
+        
+        return randomForageList
     }
     
 }

@@ -15,7 +15,7 @@ class ForestViewController: UIViewController, ElementPicker {
     
     weak var colorView : ColorsViewController?
     
-    var forageAmount = Int.random(in: 2 ... 4)
+    var forageAmount = Int.random(in: 3 ... 4)
     var forageItens : [Element]!
     var delegatee : ColorTableDelegatee!
     
@@ -24,7 +24,7 @@ class ForestViewController: UIViewController, ElementPicker {
         
         colorView = children.first as? ColorsViewController
         
-        forageItens = Element.getRandomFlowers(amount: forageAmount)
+        forageItens = Element.getRandomForage(amount: forageAmount)
         
         delegatee = ColorTableDelegatee(elements: forageItens)
         delegatee.delegate = self
