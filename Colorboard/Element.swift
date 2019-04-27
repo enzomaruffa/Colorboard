@@ -28,6 +28,9 @@ class Element {
     private static var paracelsusList : [Element] = createParacelsus()
     private static var flamelList : [Element] = createFlamel()
     
+    private static var goetheList : [Element] = createGoethe()
+    private static var hermesList : [Element] = createHermes()
+    
     
     private static func createInitialColors() -> [Element] {
         var list : [Element] = []
@@ -159,6 +162,33 @@ class Element {
         return list
     }
     
+    private static func createGoethe() -> [Element] {
+        var list : [Element] = []
+        
+        let whiteningSolution = Element("Whitening Solution", "", #colorLiteral(red: 0.894503653, green: 0.8946537971, blue: 0.8944838643, alpha: 1), true)
+        list.append(whiteningSolution)
+        
+        let blackeningSolution = Element("Blackening Solution", "", #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), true)
+        list.append(blackeningSolution)
+        
+        return list
+    }
+    
+    private static func createHermes() -> [Element] {
+        var list : [Element] = []
+        
+        let divineColor = Element("Divine Color", "", #colorLiteral(red: 0.5693798714, green: 0.1380042605, blue: 1, alpha: 1), true)
+        list.append(divineColor)
+        
+        let heartColor = Element("Heart Color", "", #colorLiteral(red: 0, green: 0.9799138904, blue: 0, alpha: 1), true)
+        list.append(heartColor)
+        
+        let mundaneColor = Element("Mundane Color", "", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), true)
+        list.append(mundaneColor)
+        
+        return list
+    }
+    
     private init(_ name : String, _ description : String, _ color : UIColor, _ isTypeMix : Bool) {
         self.name = name
         self.description = description
@@ -175,13 +205,14 @@ class Element {
     }
     
     public static func getRandomFlowers(amount : Int) -> [Element] {
+        var flowersList = getFlowers().shuffled()
+        
         let flowersAmount = amount > flowersList.count ? flowersList.count : amount
         
-        var flowersListCopy = flowersList.shuffled()
         var randomFlowersList : [Element] = []
         
         for _ in 0...flowersAmount {
-            randomFlowersList.append(flowersListCopy.popLast()!)
+            randomFlowersList.append(flowersList.popLast()!)
         }
         
         return randomFlowersList
@@ -192,13 +223,14 @@ class Element {
     }
     
     public static func getRandomForage(amount : Int) -> [Element] {
+        var forageList = getForage().shuffled()
+        
         let forageAmount = amount > forageList.count ? forageList.count : amount
         
-        var forageListCopy = forageList.shuffled()
         var randomForageList : [Element] = []
         
         for _ in 0...forageAmount {
-            randomForageList.append(forageListCopy.popLast()!)
+            randomForageList.append(forageList.popLast()!)
         }
         
         return randomForageList
@@ -209,13 +241,14 @@ class Element {
     }
     
     public static func getRandomParacelsus(amount : Int) -> [Element] {
+        var paracelsusList = getParacelsus().shuffled()
+        
         let paracelsusAmount = amount > paracelsusList.count ? paracelsusList.count : amount
         
-        var paracelsusListCopy = paracelsusList.shuffled()
         var randomParacelsusList : [Element] = []
         
         for _ in 0...paracelsusAmount {
-            randomParacelsusList.append(paracelsusListCopy.popLast()!)
+            randomParacelsusList.append(paracelsusList.popLast()!)
         }
         
         return randomParacelsusList
@@ -226,17 +259,86 @@ class Element {
     }
     
     public static func getRandomFlamel(amount : Int) -> [Element] {
+        var flamelList = getFlamel().shuffled()
+        
         let flamelAmount = amount > flamelList.count ? flamelList.count : amount
         
-        var flamelListCopy = flamelList.shuffled()
         var randomFlamelList : [Element] = []
         
         for _ in 0...flamelAmount {
-            randomFlamelList.append(flamelListCopy.popLast()!)
+            randomFlamelList.append(flamelList.popLast()!)
         }
         
         return randomFlamelList
     }
+    
+    public static func getGoethe(playerColor: UIColor, targetColor: UIColor) -> [Element] {
+        var goetheListCopy = goetheList
+        
+        let oppositeMiddleGroundColor = Element("Weird color", "", playerColor.toColor(targetColor, percentage: -50), true)
+        goetheListCopy.append(oppositeMiddleGroundColor)
+        
+        let shuffledColor1 = Element("Shuffled color", "", playerColor.shuffled(), true)
+        goetheListCopy.append(shuffledColor1)
+        
+        let shuffledColor2 = Element("Shuffled color mixture", "", playerColor.shuffled(), false)
+        goetheListCopy.append(shuffledColor2)
+        
+        let randomColor1 = Element("Random color", "", UIColor.randomColor(), true)
+        goetheListCopy.append(randomColor1)
+        
+        let randomColor2 = Element("Random color #2", "", UIColor.randomColor(), false)
+        goetheListCopy.append(randomColor2)
+        
+        return goetheListCopy
+    }
+    
+    public static func getRandomGoethe(playerColor: UIColor, targetColor: UIColor, amount : Int) -> [Element] {
+        var goetheList = getGoethe(playerColor: playerColor, targetColor: targetColor).shuffled()
+        
+        let goetheAmount = amount > goetheList.count ? goetheList.count : amount
+        
+        var randomGoetheList : [Element] = []
+        
+        for _ in 0...goetheAmount {
+            randomGoetheList.append(goetheList.popLast()!)
+        }
+        
+        return randomGoetheList
+    }
+    
+    public static func getHermes(playerColor: UIColor, targetColor: UIColor) -> [Element] {
+        var hermesListCopy = hermesList
+        
+        let oppositeColor = Element("Opposite color", "", playerColor.opposite(), true)
+        hermesListCopy.append(oppositeColor)
+        
+        let randomColor1 = Element("All's elixir", "", UIColor.randomColor(), false)
+        hermesListCopy.append(randomColor1)
+        
+        let lightenedColor = Element("Lightened color", "", playerColor.lighten(amount: CGFloat(60)), true)
+        hermesListCopy.append(lightenedColor)
+        
+        let darkenedColor = Element("Darkened color", "", playerColor.darken(amount: CGFloat(60)), true)
+        hermesListCopy.append(darkenedColor)
+        
+        return hermesListCopy
+    }
+    
+    public static func getRandomHermes(playerColor: UIColor, targetColor: UIColor, amount : Int) -> [Element] {
+        var hermesList = getHermes(playerColor: playerColor, targetColor: targetColor).shuffled()
+        
+        let hermesAmount = amount > hermesList.count ? hermesList.count : amount
+        
+        var randomHermesList : [Element] = []
+        
+        for _ in 0...hermesAmount {
+            randomHermesList.append(hermesList.popLast()!)
+        }
+        
+        return randomHermesList
+    }
+    
     
     
     

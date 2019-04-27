@@ -29,6 +29,10 @@
 		47EEB03D2274127000FA1D12 /* ParacelsusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */; };
 		47EEB03F2274127C00FA1D12 /* FlamelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */; };
 		47EEB0412274148E00FA1D12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0402274148E00FA1D12 /* LocationViewController.swift */; };
+		47EEB0432274BA0200FA1D12 /* HermesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0422274BA0200FA1D12 /* HermesViewController.swift */; };
+		47EEB0452274BA1800FA1D12 /* GoetheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0442274BA1800FA1D12 /* GoetheViewController.swift */; };
+		47EEB0472274BD7A00FA1D12 /* EndOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0462274BD7A00FA1D12 /* EndOfTheDayViewController.swift */; };
+		47EEB0492274BE7C00FA1D12 /* EndgameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0482274BE7C00FA1D12 /* EndgameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParacelsusViewController.swift; sourceTree = "<group>"; };
 		47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamelViewController.swift; sourceTree = "<group>"; };
 		47EEB0402274148E00FA1D12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		47EEB0422274BA0200FA1D12 /* HermesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HermesViewController.swift; sourceTree = "<group>"; };
+		47EEB0442274BA1800FA1D12 /* GoetheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoetheViewController.swift; sourceTree = "<group>"; };
+		47EEB0462274BD7A00FA1D12 /* EndOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfTheDayViewController.swift; sourceTree = "<group>"; };
+		47EEB0482274BE7C00FA1D12 /* EndgameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndgameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 		479D54A52270B3CB001640C9 /* Colorboard */ = {
 			isa = PBXGroup;
 			children = (
+				47EEB0482274BE7C00FA1D12 /* EndgameViewController.swift */,
 				479D54A62270B3CB001640C9 /* AppDelegate.swift */,
 				479D54A82270B3CB001640C9 /* ViewController.swift */,
 				479D54AA2270B3CB001640C9 /* Main.storyboard */,
@@ -148,6 +157,9 @@
 				47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */,
 				47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */,
 				47EEB0402274148E00FA1D12 /* LocationViewController.swift */,
+				47EEB0422274BA0200FA1D12 /* HermesViewController.swift */,
+				47EEB0442274BA1800FA1D12 /* GoetheViewController.swift */,
+				47EEB0462274BD7A00FA1D12 /* EndOfTheDayViewController.swift */,
 			);
 			path = Colorboard;
 			sourceTree = "<group>";
@@ -304,17 +316,21 @@
 			files = (
 				479D54D72271F354001640C9 /* ColorsView.swift in Sources */,
 				47AB5B1122731DF200CF4C43 /* UIColorExtension.swift in Sources */,
+				47EEB0492274BE7C00FA1D12 /* EndgameViewController.swift in Sources */,
+				47EEB0452274BA1800FA1D12 /* GoetheViewController.swift in Sources */,
 				479188D322733FFE00E3DC81 /* ColorCell.swift in Sources */,
 				47B4EB8C227392DF00046BD0 /* ForestViewController.swift in Sources */,
 				47B4EB8A2273925600046BD0 /* ElementProtocol.swift in Sources */,
 				47EEB03D2274127000FA1D12 /* ParacelsusViewController.swift in Sources */,
 				479D54A92270B3CB001640C9 /* ViewController.swift in Sources */,
 				47AB5B0F22731A7B00CF4C43 /* Element.swift in Sources */,
+				47EEB0472274BD7A00FA1D12 /* EndOfTheDayViewController.swift in Sources */,
 				4767D16D227346A30066537E /* ColorTableDelegatee.swift in Sources */,
 				47EEB03F2274127C00FA1D12 /* FlamelViewController.swift in Sources */,
 				479D54D52270B7CD001640C9 /* ColorsViewController.swift in Sources */,
 				479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */,
 				479D54DB22720416001640C9 /* Player.swift in Sources */,
+				47EEB0432274BA0200FA1D12 /* HermesViewController.swift in Sources */,
 				479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */,
 				47B4EB8E2273943D00046BD0 /* GardenViewController.swift in Sources */,
 				47EEB0412274148E00FA1D12 /* LocationViewController.swift in Sources */,

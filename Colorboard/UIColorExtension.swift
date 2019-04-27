@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIColor {
+    
     func toColor(_ color: UIColor, percentage: CGFloat) -> UIColor {
         let percentage = max(min(percentage, 100), 0) / 100
         switch percentage {
@@ -41,5 +42,55 @@ extension UIColor {
                         + pow(g1 - g2, 2)
                         + pow(b1 - b2, 2)
                         + pow(a1 - a2, 2)))
+    }
+    
+    static func randomColor() -> UIColor {
+        return UIColor(red: CGFloat(Float.random(in: 0...255)),
+                green: CGFloat(Float.random(in: 0...255)),
+                blue: CGFloat(Float.random(in: 0...255)),
+                alpha: CGFloat(Float.random(in: 0...255)))
+    }
+    
+    func opposite() -> UIColor {
+        var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
+        guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
+        
+        return UIColor(red: CGFloat(255 - r1),
+                       green: CGFloat(255 - g1),
+                       blue: CGFloat(255 - b1),
+                       alpha: CGFloat(1 - a1))
+    }
+    
+    func shuffled() -> UIColor {
+        var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
+        guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
+        
+        var colorsList = [r1, g1, b1]
+        colorsList.shuffle()
+        
+        return UIColor(red: CGFloat(colorsList[0]),
+                       green: CGFloat(colorsList[1]),
+                       blue: CGFloat(colorsList[2]),
+                       alpha: CGFloat(a1))
+    }
+    
+    func lighten(amount : CGFloat) -> UIColor {
+        var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
+        guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
+        
+        return UIColor(red: CGFloat(r1 + amount >= 255 ? 255 : r1 + amount),
+                       green: CGFloat(g1 + amount >= 255 ? 255 : g1 + amount),
+                       blue: CGFloat(b1 + amount >= 255 ? 255 : b1 + amount),
+                       alpha: CGFloat(a1))
+    }
+    
+    func darken(amount : CGFloat) -> UIColor {
+        var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
+        guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
+        
+        return UIColor(red: CGFloat(r1 - amount <= 0 ? 0 : r1 - amount),
+                       green: CGFloat(g1 - amount <= 0 ? 0 : g1 - amount),
+                       blue: CGFloat(b1 - amount <= 0 ? 0 : b1 - amount),
+                       alpha: CGFloat(a1))
     }
 }

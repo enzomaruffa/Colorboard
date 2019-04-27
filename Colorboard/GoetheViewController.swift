@@ -1,38 +1,40 @@
 //
-//  PickColorViewController.swift
+//  GoetheViewController.swift
 //  Colorboard
 //
-//  Created by Enzo Maruffa Moreira on 26/04/19.
+//  Created by Enzo Maruffa Moreira on 27/04/19.
 //  Copyright © 2019 Enzo Maruffa Moreira. All rights reserved.
 //
 
 import UIKit
 
-class PickColorViewController: LocationViewController {
-    
+class GoetheViewController: LocationViewController {
+
+    @IBOutlet weak var colorsCircleView: UIView!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var colorCirclesView: UIView!
     
-    var initialColors : [Element]!
+    var goetheItensAmount = Int.random(in: 2 ... 4)
+    var goetheItens : [Element]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Player.getInstance().resetColors()
+        let player = Player.getInstance()
         
-        initialColors = Element.getInitialColors()
+        goetheItens = Element.getRandomGoethe(playerColor: player.colorList.last!, targetColor: player.goldColor, amount: goetheItensAmount)
         
-        delegatee = ColorTableDelegatee(elements: initialColors)
+        delegatee = ColorTableDelegatee(elements: goetheItens)
         delegatee.delegate = self
         
         tableView.delegate = delegatee
         tableView.dataSource = delegatee
         
         tableView.register(UINib(nibName: String(describing: ColorCell.self), bundle: nil), forCellReuseIdentifier: "cellColor")
-
         // Do any additional setup after loading the view.
-        
+        // Do any additional setup after loading the view.
     }
+    
+
     /*
     // MARK: - Navigation
 

@@ -27,4 +27,8 @@ class Player {
         colorList.append(color)
     }
     
+    public func resetColors() {
+        colorList = [UIColor.white]
+    }
+    
 }
