@@ -84,7 +84,7 @@ you might get a different reaction based on your result... huh</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+            <point key="canvasLocation" x="-164" y="572"/>
         </scene>
         <!--Colors View Controller-->
         <scene sceneID="m1o-HV-2Yt">
@@ -127,7 +127,7 @@ you might get a different reaction based on your result... huh</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUZ-EU-j6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1717" y="-67"/>
+            <point key="canvasLocation" x="3196" y="-555"/>
         </scene>
         <!--Pick Color View Controller-->
         <scene sceneID="odo-GS-LlH">
@@ -230,6 +230,9 @@ you might get a different reaction based on your result... huh</string>
                                 <rect key="frame" x="62" y="815.5" width="123" height="29.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Paracelsus"/>
+                                <connections>
+                                    <segue destination="8NK-8o-BLB" kind="show" id="Y4P-4S-JgP"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-4r-Ksd">
                                 <rect key="frame" x="20.5" y="532" width="373" height="255.5"/>
@@ -265,6 +268,9 @@ you might get a different reaction based on your result... huh</string>
                                 <rect key="frame" x="229" y="816" width="146" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Nicolas Flamel"/>
+                                <connections>
+                                    <segue destination="hlH-5c-dB7" kind="show" id="IM8-O5-3CM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -342,11 +348,17 @@ you might get a different reaction based on your result... huh</string>
                                 <rect key="frame" x="62" y="816" width="123" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Paracelsus"/>
+                                <connections>
+                                    <segue destination="8NK-8o-BLB" kind="show" id="ptM-1A-mFg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-XL-o6g">
                                 <rect key="frame" x="229" y="816" width="146" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Nicolas Flamel"/>
+                                <connections>
+                                    <segue destination="hlH-5c-dB7" kind="show" id="TN2-QG-LyQ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9c-GF-jJ9">
                                 <rect key="frame" x="200" y="822" width="14" height="17"/>
@@ -385,10 +397,188 @@ you might get a different reaction based on your result... huh</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rYK-ci-wsg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028" y="1267"/>
+            <point key="canvasLocation" x="2028" y="1331"/>
+        </scene>
+        <!--Paracelsus View Controller-->
+        <scene sceneID="8Yl-Q5-l5S">
+            <objects>
+                <viewController id="8NK-8o-BLB" customClass="ParacelsusViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIS-Jb-orf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paracelsus" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjT-vA-mUh">
+                                <rect key="frame" x="148" y="399" width="118" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHU-5v-LXn">
+                                <rect key="frame" x="62" y="795" width="123" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="head to Paracelsus"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJo-Aw-1tA">
+                                <rect key="frame" x="20.5" y="511.5" width="373" height="255.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yJo-Aw-1tA" secondAttribute="height" multiplier="373:256" id="Yck-zI-Q3u"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="oCg-bB-2zZ"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wt-qA-mOA">
+                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Wt-qA-mOA" secondAttribute="height" multiplier="187:142" id="yEK-jM-7Wg"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="IVs-zb-vf0" kind="embed" id="A7v-pA-4D1"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;the dose makes the poison&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-3R-jXH">
+                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnI-jw-HCN">
+                                <rect key="frame" x="200" y="811.5" width="14" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-ag-w4y">
+                                <rect key="frame" x="229" y="805.5" width="146" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="head to Nicolas Flamel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BRa-22-yWj" firstAttribute="bottom" secondItem="rHU-5v-LXn" secondAttribute="bottom" constant="17" id="0Cs-Y5-Edn"/>
+                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="8rP-NJ-eYA"/>
+                            <constraint firstItem="xnI-jw-HCN" firstAttribute="leading" secondItem="rHU-5v-LXn" secondAttribute="trailing" constant="15" id="ATG-uJ-oQp"/>
+                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="top" secondItem="BRa-22-yWj" secondAttribute="top" constant="60" id="CSO-Mr-CLP"/>
+                            <constraint firstItem="iKd-3R-jXH" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="FsU-Pp-VRZ"/>
+                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="JOS-w0-VSC"/>
+                            <constraint firstItem="iKd-3R-jXH" firstAttribute="top" secondItem="rjT-vA-mUh" secondAttribute="bottom" constant="10" id="Jax-Xc-UP0"/>
+                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="P9f-cG-hfZ"/>
+                            <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="PoV-bR-QXe"/>
+                            <constraint firstItem="rjT-vA-mUh" firstAttribute="top" secondItem="4Wt-qA-mOA" secondAttribute="bottom" constant="12" id="VgO-3Q-mMA"/>
+                            <constraint firstItem="ef7-ag-w4y" firstAttribute="leading" secondItem="xnI-jw-HCN" secondAttribute="trailing" constant="15" id="XRl-TE-YMu"/>
+                            <constraint firstItem="ef7-ag-w4y" firstAttribute="centerY" secondItem="rHU-5v-LXn" secondAttribute="centerY" id="goH-aK-HoG"/>
+                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="iIr-wy-gng"/>
+                            <constraint firstItem="iKd-3R-jXH" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="lAG-Zq-c7q"/>
+                            <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="nEh-WS-xr2"/>
+                            <constraint firstItem="xnI-jw-HCN" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="nY4-GP-iqw"/>
+                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="top" secondItem="iKd-3R-jXH" secondAttribute="bottom" constant="49" id="rB0-F1-GEh"/>
+                            <constraint firstItem="rHU-5v-LXn" firstAttribute="top" secondItem="yJo-Aw-1tA" secondAttribute="bottom" constant="28" id="wlL-Hq-Baq"/>
+                            <constraint firstItem="xnI-jw-HCN" firstAttribute="centerY" secondItem="rHU-5v-LXn" secondAttribute="centerY" id="zta-ch-uss"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BRa-22-yWj"/>
+                    </view>
+                    <connections>
+                        <outlet property="circleColorsView" destination="4Wt-qA-mOA" id="hYr-pG-tng"/>
+                        <outlet property="colorsCircleView" destination="4Wt-qA-mOA" id="Dyj-oU-UpD"/>
+                        <outlet property="tableView" destination="yJo-Aw-1tA" id="Kos-ye-2yj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfG-jZ-KQE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3133" y="572"/>
+        </scene>
+        <!--Flamel View Controller-->
+        <scene sceneID="7S9-R0-gXq">
+            <objects>
+                <viewController id="hlH-5c-dB7" customClass="FlamelViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3jM-g2-8If">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nicolas flamel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-yG-wl7">
+                                <rect key="frame" x="134.5" y="399" width="145" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Ly-nlF">
+                                <rect key="frame" x="20.5" y="511.5" width="373" height="274.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iH4-Ly-nlF" secondAttribute="height" multiplier="373:275" id="AFJ-Ys-rcw"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="PET-y6-3Cy"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0Z-nO-IK9">
+                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="t0Z-nO-IK9" secondAttribute="height" multiplier="187:142" id="2QV-ss-RFm"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="IVs-zb-vf0" kind="embed" id="9j2-Wo-CK6"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="livin' forever and ever, pal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-r9-mGv">
+                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncV-oy-cbz">
+                                <rect key="frame" x="62" y="816" width="123" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="head to Paracelsus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-xX-L9G">
+                                <rect key="frame" x="229" y="816" width="146" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="head to Nicolas Flamel"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ma-R5-6vN">
+                                <rect key="frame" x="200" y="822" width="14" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vf7-r9-mGv" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="09X-Dj-KOd"/>
+                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="1OH-Pq-5KK"/>
+                            <constraint firstItem="y6X-xX-L9G" firstAttribute="centerY" secondItem="ncV-oy-cbz" secondAttribute="centerY" id="3Ue-dg-0DK"/>
+                            <constraint firstItem="iH4-Ly-nlF" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="6Wk-vz-2xW"/>
+                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="Ggt-Zv-G7h"/>
+                            <constraint firstItem="iH4-Ly-nlF" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="L2V-FG-3zl"/>
+                            <constraint firstItem="vf7-r9-mGv" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="Rq0-pf-Ckb"/>
+                            <constraint firstItem="9Ma-R5-6vN" firstAttribute="leading" secondItem="ncV-oy-cbz" secondAttribute="trailing" constant="15" id="YXI-sd-i1R"/>
+                            <constraint firstItem="vf7-r9-mGv" firstAttribute="top" secondItem="Ncd-yG-wl7" secondAttribute="bottom" constant="10" id="YgG-Po-LQY"/>
+                            <constraint firstItem="ArF-Jl-aE4" firstAttribute="bottom" secondItem="ncV-oy-cbz" secondAttribute="bottom" constant="17" id="eSa-wh-MQ3"/>
+                            <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerY" secondItem="ncV-oy-cbz" secondAttribute="centerY" id="eya-si-wUi"/>
+                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="ffS-cY-lBk"/>
+                            <constraint firstItem="y6X-xX-L9G" firstAttribute="leading" secondItem="9Ma-R5-6vN" secondAttribute="trailing" constant="15" id="gtj-Ly-BW7"/>
+                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="top" secondItem="ArF-Jl-aE4" secondAttribute="top" constant="60" id="kgS-gH-HJI"/>
+                            <constraint firstItem="iH4-Ly-nlF" firstAttribute="top" secondItem="vf7-r9-mGv" secondAttribute="bottom" constant="49" id="r8z-jP-VCq"/>
+                            <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="riY-u7-vQW"/>
+                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="top" secondItem="t0Z-nO-IK9" secondAttribute="bottom" constant="12" id="yDP-is-Bci"/>
+                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="zYa-EI-Gcl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ArF-Jl-aE4"/>
+                    </view>
+                    <connections>
+                        <outlet property="colorsCircleView" destination="t0Z-nO-IK9" id="LWF-Du-54O"/>
+                        <outlet property="tableView" destination="iH4-Ly-nlF" id="bHq-R2-3A2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zT9-gs-69I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="1331"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vIH-F4-TAV"/>
+        <segue reference="TN2-QG-LyQ"/>
+        <segue reference="ptM-1A-mFg"/>
+        <segue reference="9j2-Wo-CK6"/>
     </inferredMetricsTieBreakers>
 </document>

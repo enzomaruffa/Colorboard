@@ -105,14 +105,29 @@ class Element {
     private static func createParacelsus() -> [Element] {
         var list : [Element] = []
         
-        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
-        list.append(red)
+        let realgar = Element("Realgar", "", #colorLiteral(red: 0.8795756698, green: 0.01044942625, blue: 0.0002956551616, alpha: 1), true)
+        list.append(realgar)
         
-        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
-        list.append(green)
+        let pyrites = Element("Pyrites", "", #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1), true)
+        list.append(pyrites)
         
-        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
-        list.append(blue)
+        let azurite = Element("Azurite", "", #colorLiteral(red: 0.144416213, green: 0.09417634457, blue: 0.4225419462, alpha: 1), true)
+        list.append(azurite)
+        
+        let haematite = Element("Haematite", "", #colorLiteral(red: 0.1169488803, green: 0.11697606, blue: 0.1169452891, alpha: 1), true)
+        list.append(haematite)
+        
+        let ironOxide = Element("Iron Oxide", "", #colorLiteral(red: 1, green: 0.1287437081, blue: 0, alpha: 1), true)
+        list.append(ironOxide)
+        
+        let tutia = Element("Tutia", "", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), true)
+        list.append(tutia)
+        
+        let malachite = Element("Malachite", "", #colorLiteral(red: 0, green: 0.5893106461, blue: 0.221973151, alpha: 1), true)
+        list.append(malachite)
+        
+        let aquaRegia = Element("Aqua Regia", "", #colorLiteral(red: 0.4745098039, green: 0.7843137255, blue: 0.768627451, alpha: 1), true)
+        list.append(aquaRegia)
         
         return list
     }
@@ -120,14 +135,26 @@ class Element {
     private static func createFlamel() -> [Element] {
         var list : [Element] = []
         
-        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
-        list.append(red)
+        let sulphur = Element("Sulphur", "", #colorLiteral(red: 0.6941176471, green: 0.6470588235, blue: 0.2078431373, alpha: 1), true)
+        list.append(sulphur)
         
-        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
-        list.append(green)
+        let mercury = Element("Mercury", "", #colorLiteral(red: 0.6941176471, green: 0.6941176471, blue: 0.6941176471, alpha: 1), true)
+        list.append(mercury)
         
-        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
-        list.append(blue)
+        let salt = Element("Salt", "", #colorLiteral(red: 0.894503653, green: 0.8946537971, blue: 0.8944838643, alpha: 1), true)
+        list.append(salt)
+        
+        let lead = Element("Lead", "", #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1), true)
+        list.append(lead)
+        
+        let iron = Element("Iron", "", #colorLiteral(red: 0.6039215686, green: 0.5098039216, blue: 0.4352941176, alpha: 1), true)
+        list.append(iron)
+        
+        let philosopherElixir = Element("Life Elixir", "", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), true)
+        list.append(philosopherElixir)
+
+        let emerald = Element("Emerald", "", #colorLiteral(red: 0.02837203629, green: 0.7524441481, blue: 0.581971705, alpha: 1), true)
+        list.append(emerald)
         
         return list
     }
@@ -176,5 +203,41 @@ class Element {
         
         return randomForageList
     }
+    
+    public static func getParacelsus() -> [Element] {
+        return paracelsusList
+    }
+    
+    public static func getRandomParacelsus(amount : Int) -> [Element] {
+        let paracelsusAmount = amount > paracelsusList.count ? paracelsusList.count : amount
+        
+        var paracelsusListCopy = paracelsusList.shuffled()
+        var randomParacelsusList : [Element] = []
+        
+        for _ in 0...paracelsusAmount {
+            randomParacelsusList.append(paracelsusListCopy.popLast()!)
+        }
+        
+        return randomParacelsusList
+    }
+    
+    public static func getFlamel() -> [Element] {
+        return flamelList
+    }
+    
+    public static func getRandomFlamel(amount : Int) -> [Element] {
+        let flamelAmount = amount > flamelList.count ? flamelList.count : amount
+        
+        var flamelListCopy = flamelList.shuffled()
+        var randomFlamelList : [Element] = []
+        
+        for _ in 0...flamelAmount {
+            randomFlamelList.append(flamelListCopy.popLast()!)
+        }
+        
+        return randomFlamelList
+    }
+    
+    
     
 }

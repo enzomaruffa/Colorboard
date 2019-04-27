@@ -26,6 +26,9 @@
 		47B4EB8A2273925600046BD0 /* ElementProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B4EB892273925600046BD0 /* ElementProtocol.swift */; };
 		47B4EB8C227392DF00046BD0 /* ForestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B4EB8B227392DF00046BD0 /* ForestViewController.swift */; };
 		47B4EB8E2273943D00046BD0 /* GardenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B4EB8D2273943D00046BD0 /* GardenViewController.swift */; };
+		47EEB03D2274127000FA1D12 /* ParacelsusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */; };
+		47EEB03F2274127C00FA1D12 /* FlamelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */; };
+		47EEB0412274148E00FA1D12 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0402274148E00FA1D12 /* LocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		47B4EB892273925600046BD0 /* ElementProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementProtocol.swift; sourceTree = "<group>"; };
 		47B4EB8B227392DF00046BD0 /* ForestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestViewController.swift; sourceTree = "<group>"; };
 		47B4EB8D2273943D00046BD0 /* GardenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenViewController.swift; sourceTree = "<group>"; };
+		47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParacelsusViewController.swift; sourceTree = "<group>"; };
+		47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamelViewController.swift; sourceTree = "<group>"; };
+		47EEB0402274148E00FA1D12 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,9 @@
 				47B4EB892273925600046BD0 /* ElementProtocol.swift */,
 				47B4EB8B227392DF00046BD0 /* ForestViewController.swift */,
 				47B4EB8D2273943D00046BD0 /* GardenViewController.swift */,
+				47EEB03C2274127000FA1D12 /* ParacelsusViewController.swift */,
+				47EEB03E2274127C00FA1D12 /* FlamelViewController.swift */,
+				47EEB0402274148E00FA1D12 /* LocationViewController.swift */,
 			);
 			path = Colorboard;
 			sourceTree = "<group>";
@@ -298,14 +307,17 @@
 				479188D322733FFE00E3DC81 /* ColorCell.swift in Sources */,
 				47B4EB8C227392DF00046BD0 /* ForestViewController.swift in Sources */,
 				47B4EB8A2273925600046BD0 /* ElementProtocol.swift in Sources */,
+				47EEB03D2274127000FA1D12 /* ParacelsusViewController.swift in Sources */,
 				479D54A92270B3CB001640C9 /* ViewController.swift in Sources */,
 				47AB5B0F22731A7B00CF4C43 /* Element.swift in Sources */,
 				4767D16D227346A30066537E /* ColorTableDelegatee.swift in Sources */,
+				47EEB03F2274127C00FA1D12 /* FlamelViewController.swift in Sources */,
 				479D54D52270B7CD001640C9 /* ColorsViewController.swift in Sources */,
 				479188D0227335F300E3DC81 /* PickColorViewController.swift in Sources */,
 				479D54DB22720416001640C9 /* Player.swift in Sources */,
 				479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */,
 				47B4EB8E2273943D00046BD0 /* GardenViewController.swift in Sources */,
+				47EEB0412274148E00FA1D12 /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

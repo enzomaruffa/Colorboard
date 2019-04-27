@@ -8,21 +8,16 @@
 
 import UIKit
 
-class GardenViewController: UIViewController, ElementPicker {
+class GardenViewController: LocationViewController {
 
     @IBOutlet weak var colorCirclesView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    weak var colorView : ColorsViewController?
-    
     var flowersAmount = Int.random(in: 2 ... 4)
     var flowers : [Element]!
-    var delegatee : ColorTableDelegatee!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        colorView = children.first as? ColorsViewController
         
         flowers = Element.getRandomFlowers(amount: flowersAmount)
         
@@ -36,11 +31,6 @@ class GardenViewController: UIViewController, ElementPicker {
 
         // Do any additional setup after loading the view.
     }
-    
-    func didSelect(element: Element) {
-        colorView?.applyElement(element: element)
-    }
-    
     /*
     // MARK: - Navigation
 

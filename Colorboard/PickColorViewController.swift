@@ -8,21 +8,16 @@
 
 import UIKit
 
-class PickColorViewController: UIViewController, ElementPicker {
+class PickColorViewController: LocationViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var colorCirclesView: UIView!
     
-    weak var colorView : ColorsViewController?
-    
     var initialColorsAmount = 3
     var initialColors : [Element]!
-    var delegatee : ColorTableDelegatee!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        colorView = children.first as? ColorsViewController
         
         initialColors = Element.getInitialColors()
         
@@ -36,10 +31,6 @@ class PickColorViewController: UIViewController, ElementPicker {
 
         // Do any additional setup after loading the view.
         
-    }
-    
-    func didSelect(element: Element) {
-        colorView?.applyElement(element: element)
     }
     /*
     // MARK: - Navigation

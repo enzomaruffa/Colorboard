@@ -1,36 +1,36 @@
 //
-//  ForestViewController.swift
+//  ParacelsusViewController.swift
 //  Colorboard
 //
-//  Created by Enzo Maruffa Moreira on 26/04/19.
+//  Created by Enzo Maruffa Moreira on 27/04/19.
 //  Copyright © 2019 Enzo Maruffa Moreira. All rights reserved.
 //
 
 import UIKit
 
-class ForestViewController: LocationViewController {
+class ParacelsusViewController: LocationViewController {
 
-    @IBOutlet weak var colorCirclesView: UIView!
+    @IBOutlet weak var colorsCircleView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
-    var forageAmount = Int.random(in: 3 ... 4)
-    var forageItens : [Element]!
+    var paracelsusItensAmount = Int.random(in: 2 ... 4)
+    var paracelsusItens : [Element]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        forageItens = Element.getRandomForage(amount: forageAmount)
+        paracelsusItens = Element.getRandomParacelsus(amount: paracelsusItensAmount)
         
-        delegatee = ColorTableDelegatee(elements: forageItens)
+        delegatee = ColorTableDelegatee(elements: paracelsusItens)
         delegatee.delegate = self
         
         tableView.delegate = delegatee
         tableView.dataSource = delegatee
         
         tableView.register(UINib(nibName: String(describing: ColorCell.self), bundle: nil), forCellReuseIdentifier: "cellColor")
-
         // Do any additional setup after loading the view.
     }
+    
 
     /*
     // MARK: - Navigation
