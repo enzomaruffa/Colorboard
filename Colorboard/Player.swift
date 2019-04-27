@@ -6,10 +6,12 @@
 //  Copyright © 2019 Enzo Maruffa Moreira. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 class Player {
+    
+    var colorList : [UIColor] = [UIColor.white]
+    var goldColor : UIColor =  #colorLiteral(red: 1, green: 0.7913135886, blue: 0, alpha: 1)
     
     private static var playerInstance = Player()
     
@@ -19,6 +21,10 @@ class Player {
     
     public static func getInstance() -> Player {
         return playerInstance
+    }
+    
+    public func addColorToPlayer(color : UIColor) {
+        colorList.append(color)
     }
     
 }

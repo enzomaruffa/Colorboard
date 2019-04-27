@@ -13,16 +13,35 @@ class ColorsViewController: UIViewController {
     @IBOutlet weak var bigCircle: UIView!
     @IBOutlet weak var smallCircle: UIView!
     
+    var player = Player.getInstance()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        smallCircle.backgroundColor = player.goldColor
+        smallCircle.layer.borderColor = UIColor.white.cgColor
         
-        smallCircle.backgroundColor = .white
-        smallCircle.layer.borderColor = UIColor.black.cgColor
-        bigCircle.backgroundColor = .white
+        let durationColor : Double = 0.8 / Double(player.colorList.count)
+        paintAnimation(current: 0, duration: durationColor)
+        
         bigCircle.layer.borderColor = UIColor.black.cgColor
 
         // Do any additional setup after loading the view.
+    }
+    
+    func paintAnimation (current : Int, duration : Double) {
+        //animate
+        
+        UIView.animate(withDuration: duration, animations: {
+            self.setBigCircleColor(color: self.player.colorList[current])
+        }, completion: { (_) in
+            
+            if current + 1 == self.player.colorList.count {
+                return
+            }
+            
+            self.paintAnimation(current: current+1, duration: duration)
+        })
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +58,22 @@ class ColorsViewController: UIViewController {
         smallCircle.layer.cornerRadius = radius
         smallCircle.layer.borderWidth = 2
         
+    }
+    
+    public func applyElement(element : Element) {
+        if element.isTypeMix {
+            print("Mixing colors")
+            mixBigCircleColor(color: element.color, percentage: 50)
+        } else {
+            setBigCircleColor(color: element.color)
+        }
+        
+        player.addColorToPlayer(color: bigCircle.backgroundColor!)
+    }
+    
+    public func mixBigCircleColor(color: UIColor, percentage: CGFloat) {
+        setBigCircleColor(color: (bigCircle.backgroundColor?.toColor(color
+            , percentage: percentage))!)
     }
     
     public func setBigCircleColor(color: UIColor) {

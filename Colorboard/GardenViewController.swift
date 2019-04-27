@@ -1,5 +1,5 @@
 //
-//  PickColorViewController.swift
+//  GardenViewController.swift
 //  Colorboard
 //
 //  Created by Enzo Maruffa Moreira on 26/04/19.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-class PickColorViewController: UIViewController, ElementPicker {
-    
-    @IBOutlet weak var tableView: UITableView!
+class GardenViewController: UIViewController, ElementPicker {
+
     @IBOutlet weak var colorCirclesView: UIView!
+    @IBOutlet weak var tableView: UITableView!
     
     weak var colorView : ColorsViewController?
     
-    var initialColorsAmount = 3
-    var initialColors : [Element]!
+    var flowersAmount = Int.random(in: 2 ... 4)
+    var flowers : [Element]!
     var delegatee : ColorTableDelegatee!
     
     override func viewDidLoad() {
@@ -24,9 +24,9 @@ class PickColorViewController: UIViewController, ElementPicker {
         
         colorView = children.first as? ColorsViewController
         
-        initialColors = Element.getInitialColors()
+        flowers = Element.getRandomFlowers(amount: flowersAmount)
         
-        delegatee = ColorTableDelegatee(elements: initialColors)
+        delegatee = ColorTableDelegatee(elements: flowers)
         delegatee.delegate = self
         
         tableView.delegate = delegatee
@@ -35,12 +35,12 @@ class PickColorViewController: UIViewController, ElementPicker {
         tableView.register(UINib(nibName: String(describing: ColorCell.self), bundle: nil), forCellReuseIdentifier: "cellColor")
 
         // Do any additional setup after loading the view.
-        
     }
     
     func didSelect(element: Element) {
         colorView?.applyElement(element: element)
     }
+    
     /*
     // MARK: - Navigation
 

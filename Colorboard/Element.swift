@@ -17,7 +17,29 @@ class Element {
     public var description : String
     public var isTypeMix : Bool
     
-    private static var flowersList : [Element] = createFlowers()
+    private static var initialColorsList : [Element] = createInitialColors() // pick color
+    
+    private static var flowersList : [Element] = createFlowers() // garden
+    private static var forageList : [Element] = createForage()
+    
+    private static var paracelsusList : [Element] = createParacelsus()
+    private static var flamelList : [Element] = createFlamel()
+    
+    
+    private static func createInitialColors() -> [Element] {
+        var list : [Element] = []
+        
+        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
+        list.append(red)
+        
+        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
+        list.append(green)
+        
+        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
+        list.append(blue)
+        
+        return list
+    }
     
     private static func createFlowers() -> [Element] {
         var list : [Element] = []
@@ -46,11 +68,61 @@ class Element {
         return list
     }
     
+    
+    private static func createForage() -> [Element] {
+        var list : [Element] = []
+        
+        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
+        list.append(red)
+        
+        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
+        list.append(green)
+        
+        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
+        list.append(blue)
+        
+        return list
+    }
+    
+    private static func createParacelsus() -> [Element] {
+        var list : [Element] = []
+        
+        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
+        list.append(red)
+        
+        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
+        list.append(green)
+        
+        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
+        list.append(blue)
+        
+        return list
+    }
+    
+    private static func createFlamel() -> [Element] {
+        var list : [Element] = []
+        
+        let red = Element("Red", "(R)GB", #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1), false)
+        list.append(red)
+        
+        let green = Element("Green", "R(G)B", #colorLiteral(red: 0, green: 1, blue: 0, alpha: 1), false)
+        list.append(green)
+        
+        let blue = Element("Blue", "RG(B)", #colorLiteral(red: 0, green: 0, blue: 1, alpha: 1), false)
+        list.append(blue)
+        
+        return list
+    }
+    
     private init(_ name : String, _ description : String, _ color : UIColor, _ isTypeMix : Bool) {
         self.name = name
         self.description = description
         self.color = color
         self.isTypeMix = isTypeMix
+    }
+    
+    public static func getInitialColors() -> [Element] {
+        return initialColorsList
     }
     
     public static func getFlowers() -> [Element] {
