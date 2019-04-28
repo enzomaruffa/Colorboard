@@ -98,4 +98,8 @@ extension UIColor {
                        blue: CGFloat(b1 - amount <= 0 ? 0 : b1 - amount),
                        alpha: CGFloat(a1))
     }
+    
+    static func randomYellowColor() -> UIColor {
+        return UIColor(hue: CGFloat( Float.random(in: 0.11...0.16)), saturation: CGFloat(Float.random(in: 0.8...1.00)), brightness: CGFloat(Float.random(in: 0.8...1.00)), alpha: 1.0)
+    }
 }

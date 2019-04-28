@@ -26,7 +26,8 @@ class LocationViewController: UIViewController, ElementPicker {
     }
     
     func didSelectInfo(element: Element) {
-        messageBox(messageTitle: element.name, messageAlert: element.description, completionHandler: {})
+        let warningText = element.isTypeMix ? "This element's color will mix with your current color" : "This element's color will overwrite your current color"
+        messageBox(messageTitle: element.name, messageAlert: element.description + "\n\n" + warningText, completionHandler: {})
     }
     
     func messageBox(messageTitle: String, messageAlert: String, completionHandler: @escaping () -> Void)

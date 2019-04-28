@@ -77,6 +77,9 @@ you might get a different reaction based on your result... huh</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="instructionsTextView" destination="izG-tS-HcS" id="rzX-cC-3A0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -875,10 +878,10 @@ otherwise, feel free to complete your journey again!</string>
             </objects>
             <point key="canvasLocation" x="3088" y="-875"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="DOe-mJ-EmS">
             <objects>
-                <viewController id="IVm-kr-kYS" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IVm-kr-kYS" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tgp-Dn-c5D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -945,10 +948,10 @@ enjoy your time there! watch out for the bees, as they sting quite hard during t
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="571.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="sUZ-0d-e1G">
             <objects>
-                <viewController id="1Jc-cU-J07" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Jc-cU-J07" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Iry-oY-rGm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1017,10 +1020,10 @@ but they are tasty...</string>
             </objects>
             <point key="canvasLocation" x="1835" y="1331"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="VAD-mv-wyu">
             <objects>
-                <viewController id="mOH-KR-l64" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mOH-KR-l64" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G1U-Ll-n7y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1087,10 +1090,10 @@ however, he created some niiiice stuff. go see it!</string>
             </objects>
             <point key="canvasLocation" x="3935" y="572"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="1mA-F4-Caf">
             <objects>
-                <viewController id="s62-Io-qHS" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s62-Io-qHS" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PaT-b5-Aec">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1159,10 +1162,10 @@ dude is awesome...</string>
             </objects>
             <point key="canvasLocation" x="3935" y="1331"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="G9w-Pz-F9A">
             <objects>
-                <viewController id="MSe-fC-oEz" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MSe-fC-oEz" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IV1-nd-GE9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1231,10 +1234,10 @@ his work with colors is also soooooo cool. you'll see he has some weird colors!<
             </objects>
             <point key="canvasLocation" x="5777" y="572"/>
         </scene>
-        <!--View Controller-->
+        <!--Walking View Controller-->
         <scene sceneID="f5e-nT-7vf">
             <objects>
-                <viewController id="ThR-X3-onq" customClass="ViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ThR-X3-onq" customClass="WalkingViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kyq-eW-NTh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1312,7 +1315,7 @@ be ready to see some pretty cool tricks he has under his sleeve - or should i sa
         <segue reference="p9v-Q9-UGc"/>
         <segue reference="jrx-DM-c8o"/>
         <segue reference="NGV-VS-Ts1"/>
-        <segue reference="32C-Vw-C6D"/>
-        <segue reference="9j2-Wo-CK6"/>
+        <segue reference="5bB-Tj-RG3"/>
+        <segue reference="vIH-F4-TAV"/>
     </inferredMetricsTieBreakers>
 </document>

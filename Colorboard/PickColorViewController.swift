@@ -18,8 +18,6 @@ class PickColorViewController: LocationViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Player.getInstance().resetColors()
-        
         initialColors = Element.getInitialColors()
         
         delegatee = ColorTableDelegatee(elements: initialColors)

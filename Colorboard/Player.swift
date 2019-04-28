@@ -11,7 +11,7 @@ import UIKit
 class Player {
     
     var colorList : [UIColor] = [UIColor.white]
-    var goldColor : UIColor =  #colorLiteral(red: 1, green: 0.7913135886, blue: 0, alpha: 1)
+    var goldColor : UIColor =  UIColor.randomYellowColor()
     var endingGame = false
     
     private static var playerInstance = Player()
@@ -30,6 +30,7 @@ class Player {
     
     public func resetColors() {
         colorList = [UIColor.white]
+        goldColor = UIColor.randomYellowColor()
     }
     
     public func getCurrentColor() -> UIColor {
