@@ -21,7 +21,7 @@ class GoetheViewController: LocationViewController {
         
         let player = Player.getInstance()
         
-        goetheItens = Element.getRandomGoethe(playerColor: player.colorList.last!, targetColor: player.goldColor, amount: goetheItensAmount)
+        goetheItens = Element.getRandomGoethe(playerColor: player.getCurrentColor(), targetColor: player.goldColor, amount: goetheItensAmount)
         
         delegatee = ColorTableDelegatee(elements: goetheItens)
         delegatee.delegate = self

@@ -38,27 +38,26 @@ extension UIColor {
         guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return -1 }
         guard color.getRed(&r2, green: &g2, blue: &b2, alpha: &a2) else { return -1 }
         
-        return sqrt(Double(pow(r1 - r2, 2)
-                        + pow(g1 - g2, 2)
-                        + pow(b1 - b2, 2)
-                        + pow(a1 - a2, 2)))
+        return sqrt(Double((2 * pow(r1 - r2, 2)
+                        + 4 * pow(g1 - g2, 2)
+                        + 3 * pow(b1 - b2, 2)) / 9 ))
     }
     
     static func randomColor() -> UIColor {
-        return UIColor(red: CGFloat(Float.random(in: 0...255)),
-                green: CGFloat(Float.random(in: 0...255)),
-                blue: CGFloat(Float.random(in: 0...255)),
-                alpha: CGFloat(Float.random(in: 0...255)))
+        return UIColor(red: CGFloat(Float.random(in: 0...1)),
+                green: CGFloat(Float.random(in: 0...1)),
+                blue: CGFloat(Float.random(in: 0...1)),
+                alpha: CGFloat(Float.random(in: 0...1)))
     }
     
     func opposite() -> UIColor {
         var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
         guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
         
-        return UIColor(red: CGFloat(255 - r1),
-                       green: CGFloat(255 - g1),
-                       blue: CGFloat(255 - b1),
-                       alpha: CGFloat(1 - a1))
+        return UIColor(red: CGFloat(1 - r1),
+                       green: CGFloat(1 - g1),
+                       blue: CGFloat(1 - b1),
+                       alpha: CGFloat(a1))
     }
     
     func shuffled() -> UIColor {
@@ -78,9 +77,9 @@ extension UIColor {
         var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
         guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return self }
         
-        return UIColor(red: CGFloat(r1 + amount >= 255 ? 255 : r1 + amount),
-                       green: CGFloat(g1 + amount >= 255 ? 255 : g1 + amount),
-                       blue: CGFloat(b1 + amount >= 255 ? 255 : b1 + amount),
+        return UIColor(red: CGFloat(r1 + amount >= 1 ? 1 : r1 + amount),
+                       green: CGFloat(g1 + amount >= 1 ? 1 : g1 + amount),
+                       blue: CGFloat(b1 + amount >= 1 ? 1 : b1 + amount),
                        alpha: CGFloat(a1))
     }
     

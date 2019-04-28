@@ -44,19 +44,33 @@ class ColorsViewController: UIViewController {
         })
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    func createCircles() {
+        let coeficient = CGFloat(0.5)
         
-        print(self.view.frame)
-        //let view = ColorsView(frame: self.view.frame)
-        //self.view.addSubview(view)
+        print(bigCircle.frame.height)
         
-        var radius = bigCircle.frame.height * 0.5
+        var radius = (bigCircle.frame.height) * coeficient
         bigCircle.layer.cornerRadius = radius
         bigCircle.layer.borderWidth = 2
         
-        radius = smallCircle.frame.height * 0.5
+        radius = (smallCircle.frame.height) * coeficient
         smallCircle.layer.cornerRadius = radius
         smallCircle.layer.borderWidth = 2
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("view will appear")
+        createCircles()
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        coordinator.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) -> Void in
+            
+        }, completion: { (UIViewControllerTransitionCoordinatorContext) -> Void in
+            //refresh view once rotation is completed not in will transition as it returns incorrect frame size.Refresh here
+            self.createCircles()
+        })
+        super.viewWillTransition(to: size, with: coordinator)
         
     }
     

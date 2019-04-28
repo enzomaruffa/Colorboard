@@ -81,9 +81,6 @@ class Element {
         let porsini = Element("Porsini", "", #colorLiteral(red: 0.5867403746, green: 0.03480042145, blue: 0.02191970125, alpha: 1), true)
         list.append(porsini)
         
-        let chanterele = Element("Chanterele", "", #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1), true)
-        list.append(chanterele)
-        
         let shitake = Element("Shitake", "", #colorLiteral(red: 0.7973647714, green: 0.4608165622, blue: 0.2528178394, alpha: 1), true)
         list.append(shitake)
         
@@ -310,16 +307,16 @@ class Element {
     public static func getHermes(playerColor: UIColor, targetColor: UIColor) -> [Element] {
         var hermesListCopy = hermesList
         
-        let oppositeColor = Element("Opposite color", "", playerColor.opposite(), true)
+        let oppositeColor = Element("Opposite color", "", playerColor.opposite(), false)
         hermesListCopy.append(oppositeColor)
         
         let randomColor1 = Element("All's elixir", "", UIColor.randomColor(), false)
         hermesListCopy.append(randomColor1)
         
-        let lightenedColor = Element("Lightened color", "", playerColor.lighten(amount: CGFloat(60)), true)
+        let lightenedColor = Element("Lightened color", "", playerColor.lighten(amount: CGFloat(0.15)), true)
         hermesListCopy.append(lightenedColor)
         
-        let darkenedColor = Element("Darkened color", "", playerColor.darken(amount: CGFloat(60)), true)
+        let darkenedColor = Element("Darkened color", "", playerColor.darken(amount: CGFloat(0.15)), true)
         hermesListCopy.append(darkenedColor)
         
         return hermesListCopy

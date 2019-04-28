@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2I-eR-Wig">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Y2I-eR-Wig" secondAttribute="height" multiplier="187:142" id="zYT-ux-Yf1"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how it works" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRo-VS-5Fg">
-                                <rect key="frame" x="140" y="419" width="134" height="33"/>
+                                <rect key="frame" x="140" y="436.5" width="134" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -40,26 +40,23 @@
                                     <segue destination="abg-59-RFM" kind="show" id="5bB-Tj-RG3"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
-                                <rect key="frame" x="20" y="460" width="374" height="297"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
+                                <rect key="frame" x="20" y="477.5" width="374" height="279.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="297" id="2TF-pd-ktc"/>
-                                </constraints>
-                                <string key="text">you are now in the path of the Alchemist! 
+                                <mutableString key="text">you are now in the path of the Alchemist! 
 as an alchemist, it is your duty to create gold, of course. 
 
 to do so, you are going to work with colors! 
 i mean, we do not need REAL gold, just something that looks like it! 
 
-you'll have, each day, different ingredients that you can mix to your color. 
+you'll have, each day, different ingredients that you can mix to your color. as expected, each location will have different ingredientes too! be wise!
 
 your current color is represented by the bigger circle, while your target gold color is the smaller one!
 
 each transformation has a name and a color. if this color is a circle, it will mix with your current color. if it's a square, it will overwrite your current color!
 
 once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
-you might get a different reaction based on your result... huh</string>
+you might get a different reaction based on your result... huh</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -67,17 +64,16 @@ you might get a different reaction based on your result... huh</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1fO-xM-weF"/>
-                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.9" id="4WP-Wy-8Su"/>
-                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9Yg-5n-ZnW"/>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="top" secondItem="fRo-VS-5Fg" secondAttribute="bottom" constant="8" id="JBp-V1-i4M"/>
                             <constraint firstItem="f4u-od-hub" firstAttribute="top" secondItem="izG-tS-HcS" secondAttribute="bottom" constant="58" id="Jse-en-Rfc"/>
                             <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UPj-WI-Zru"/>
                             <constraint firstItem="f4u-od-hub" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eTS-0K-aF0"/>
                             <constraint firstItem="izG-tS-HcS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kWF-bI-Vqc"/>
-                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="32" id="lQU-jP-RRD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f4u-od-hub" secondAttribute="bottom" constant="17" id="mPK-IW-nee"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="top" secondItem="Y2I-eR-Wig" secondAttribute="bottom" constant="10" id="p42-BE-TfE"/>
                             <constraint firstItem="Y2I-eR-Wig" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q5T-FA-ek8"/>
-                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="v5O-2v-CH5"/>
+                            <constraint firstItem="fRo-VS-5Fg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="r1H-S3-5sy"/>
+                            <constraint firstItem="Y2I-eR-Wig" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="v5O-2v-CH5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -91,18 +87,18 @@ you might get a different reaction based on your result... huh</string>
             <objects>
                 <viewController id="IVs-zb-vf0" customClass="ColorsViewController" customModule="Colorboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VVI-Co-tb1">
-                        <rect key="frame" x="0.0" y="0.0" width="373" height="283"/>
+                        <rect key="frame" x="0.0" y="0.0" width="477" height="362.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBG-xY-QXY">
-                                <rect key="frame" x="66" y="26" width="241" height="241"/>
+                                <rect key="frame" x="84.5" y="32" width="308" height="308.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="uBG-xY-QXY" secondAttribute="height" multiplier="1:1" id="D3G-Zt-PUv"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4j-f5-16x">
-                                <rect key="frame" x="51" y="31" width="84.5" height="84.5"/>
+                                <rect key="frame" x="65" y="39" width="108.5" height="108.5"/>
                                 <color key="backgroundColor" red="1" green="0.80110809169999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="l4j-f5-16x" secondAttribute="height" multiplier="1:1" id="DQY-jV-nWq"/>
@@ -138,7 +134,7 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="choose your starting color" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIG-xl-UI5">
-                                <rect key="frame" x="66.5" y="419" width="281" height="33"/>
+                                <rect key="frame" x="66.5" y="436.5" width="281" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -152,15 +148,12 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="Kvd-dl-ajA">
-                                <rect key="frame" x="20.5" y="477" width="373" height="310.5"/>
+                                <rect key="frame" x="20.5" y="494.5" width="373" height="310.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Kvd-dl-ajA" secondAttribute="height" multiplier="373:311" id="SOR-US-w8M"/>
-                                </constraints>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="er2-wh-aDb">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="er2-wh-aDb" secondAttribute="height" multiplier="187:142" id="f03-60-gVc"/>
                                 </constraints>
@@ -185,12 +178,13 @@ you might get a different reaction based on your result... huh</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CIG-xl-UI5" firstAttribute="top" secondItem="er2-wh-aDb" secondAttribute="bottom" constant="32" id="Aje-kG-Q7u"/>
+                            <constraint firstItem="UcG-O9-ubA" firstAttribute="top" secondItem="Kvd-dl-ajA" secondAttribute="bottom" constant="17" id="4lv-ue-dej"/>
+                            <constraint firstItem="CIG-xl-UI5" firstAttribute="top" secondItem="er2-wh-aDb" secondAttribute="bottom" constant="10" id="Aje-kG-Q7u"/>
                             <constraint firstItem="k9f-kb-XHf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="UcG-O9-ubA" secondAttribute="trailing" constant="15" id="BhL-6g-i4u"/>
                             <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="Eh6-rR-MUV"/>
-                            <constraint firstItem="er2-wh-aDb" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="GFY-MV-6LA"/>
                             <constraint firstItem="er2-wh-aDb" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="J0j-Yb-5EC"/>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="centerY" secondItem="MFL-Ws-XcQ" secondAttribute="centerY" id="KVc-hW-Eer"/>
+                            <constraint firstItem="CIG-xl-UI5" firstAttribute="centerY" secondItem="hfy-in-Efu" secondAttribute="centerY" id="Qam-pJ-vNr"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="TUF-Ac-Y1v"/>
                             <constraint firstItem="k9f-kb-XHf" firstAttribute="centerY" secondItem="MFL-Ws-XcQ" secondAttribute="centerY" id="XbX-GR-FD2"/>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="leading" secondItem="MFL-Ws-XcQ" secondAttribute="trailing" constant="15" id="cMK-1F-VWQ"/>
@@ -199,8 +193,7 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="hfy-in-Efu" firstAttribute="trailing" secondItem="k9f-kb-XHf" secondAttribute="trailing" constant="70" id="oBI-2i-3KC"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="vXn-vA-HDn"/>
                             <constraint firstItem="hfy-in-Efu" firstAttribute="bottom" secondItem="MFL-Ws-XcQ" secondAttribute="bottom" constant="17" id="x6l-yO-fj6"/>
-                            <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="xKI-xd-dtL"/>
-                            <constraint firstItem="er2-wh-aDb" firstAttribute="top" secondItem="hfy-in-Efu" secondAttribute="top" constant="60" id="yu7-C9-DKN"/>
+                            <constraint firstItem="er2-wh-aDb" firstAttribute="top" secondItem="hfy-in-Efu" secondAttribute="top" constant="20" id="yu7-C9-DKN"/>
                             <constraint firstItem="MFL-Ws-XcQ" firstAttribute="leading" secondItem="hfy-in-Efu" secondAttribute="leading" constant="62" id="z5E-cx-vwo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hfy-in-Efu"/>
@@ -222,7 +215,7 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the garden" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DX0-gG-che">
-                                <rect key="frame" x="147.5" y="399" width="119" height="33"/>
+                                <rect key="frame" x="147.5" y="436.5" width="119" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -236,16 +229,13 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-4r-Ksd">
-                                <rect key="frame" x="20.5" y="532" width="373" height="255.5"/>
+                                <rect key="frame" x="20.5" y="540.5" width="373" height="271.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="9s1-4r-Ksd" secondAttribute="height" multiplier="373:256" id="rNO-1w-IpL"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="meM-aA-4GD"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g74-Sw-YEa">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="g74-Sw-YEa" secondAttribute="height" multiplier="187:142" id="Onl-sW-dd8"/>
                                 </constraints>
@@ -254,7 +244,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;the garden is where the beauty lives&quot; - macaulay culkin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN8-aT-KdB">
-                                <rect key="frame" x="20.5" y="442" width="373" height="41"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="41"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -281,21 +271,22 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="DX0-gG-che" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="7il-2L-a1Z"/>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="8zU-MM-Xx9"/>
                             <constraint firstItem="DN8-aT-KdB" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="Ac1-HQ-L6q"/>
-                            <constraint firstItem="g74-Sw-YEa" firstAttribute="top" secondItem="tGL-ed-Mq4" secondAttribute="top" constant="60" id="DKy-QX-c5y"/>
+                            <constraint firstItem="g74-Sw-YEa" firstAttribute="top" secondItem="tGL-ed-Mq4" secondAttribute="top" constant="20" id="DKy-QX-c5y"/>
                             <constraint firstItem="9s1-4r-Ksd" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="LYx-tM-mXh"/>
+                            <constraint firstItem="Eu4-WJ-7d1" firstAttribute="top" secondItem="9s1-4r-Ksd" secondAttribute="bottom" constant="10" id="QQj-xf-Qc6"/>
                             <constraint firstItem="601-41-o9O" firstAttribute="centerY" secondItem="ciM-Pz-CwG" secondAttribute="centerY" id="Qqa-5M-Wh3"/>
                             <constraint firstItem="DN8-aT-KdB" firstAttribute="width" secondItem="tGL-ed-Mq4" secondAttribute="width" multiplier="0.9" id="WcK-Fl-G7G"/>
                             <constraint firstItem="DX0-gG-che" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="XKw-DD-GvX"/>
                             <constraint firstItem="9s1-4r-Ksd" firstAttribute="width" secondItem="tGL-ed-Mq4" secondAttribute="width" multiplier="0.9" id="XfH-GS-S4y"/>
-                            <constraint firstItem="g74-Sw-YEa" firstAttribute="width" secondItem="tGL-ed-Mq4" secondAttribute="width" multiplier="0.9" id="edE-fm-G9r"/>
                             <constraint firstItem="DN8-aT-KdB" firstAttribute="top" secondItem="DX0-gG-che" secondAttribute="bottom" constant="10" id="fdW-qq-1lL"/>
-                            <constraint firstItem="9s1-4r-Ksd" firstAttribute="top" secondItem="DN8-aT-KdB" secondAttribute="bottom" constant="49" id="keX-Jy-uBB"/>
+                            <constraint firstItem="9s1-4r-Ksd" firstAttribute="top" secondItem="DN8-aT-KdB" secondAttribute="bottom" constant="20" id="keX-Jy-uBB"/>
                             <constraint firstItem="g74-Sw-YEa" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="mAd-Ro-iXY"/>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="leading" secondItem="ciM-Pz-CwG" secondAttribute="trailing" constant="15" id="s0d-RF-ngS"/>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="centerY" secondItem="ciM-Pz-CwG" secondAttribute="centerY" id="s1f-mX-p6D"/>
                             <constraint firstItem="tGL-ed-Mq4" firstAttribute="bottom" secondItem="ciM-Pz-CwG" secondAttribute="bottom" constant="17" id="vMW-Me-lML"/>
                             <constraint firstItem="601-41-o9O" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Eu4-WJ-7d1" secondAttribute="trailing" constant="15" id="vMf-f2-rWW"/>
-                            <constraint firstItem="DX0-gG-che" firstAttribute="top" secondItem="g74-Sw-YEa" secondAttribute="bottom" constant="12" id="yM6-rZ-wp7"/>
+                            <constraint firstItem="DX0-gG-che" firstAttribute="top" secondItem="g74-Sw-YEa" secondAttribute="bottom" constant="10" id="yM6-rZ-wp7"/>
+                            <constraint firstItem="DX0-gG-che" firstAttribute="centerY" secondItem="tGL-ed-Mq4" secondAttribute="centerY" id="zdv-mN-Kbu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tGL-ed-Mq4"/>
                     </view>
@@ -317,22 +308,19 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the forest" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-se-I9L">
-                                <rect key="frame" x="156.5" y="399" width="101" height="33"/>
+                                <rect key="frame" x="156.5" y="436.5" width="101" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="lLS-OS-738">
-                                <rect key="frame" x="20.5" y="511.5" width="373" height="274.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="292"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="lLS-OS-738" secondAttribute="height" multiplier="373:275" id="vod-6K-1al"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="EOA-VL-bdf"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcv-t2-VnL">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pcv-t2-VnL" secondAttribute="height" multiplier="187:142" id="O1b-AS-dKV"/>
                                 </constraints>
@@ -341,7 +329,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isn't as big as Amazonia but still kinda pretty" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2g-1P-gbF">
-                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -372,21 +360,22 @@ you might get a different reaction based on your result... huh</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xdq-se-I9L" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="1Xq-lD-OVV"/>
-                            <constraint firstItem="lLS-OS-738" firstAttribute="top" secondItem="P2g-1P-gbF" secondAttribute="bottom" constant="49" id="Db4-9T-J7L"/>
-                            <constraint firstItem="pcv-t2-VnL" firstAttribute="top" secondItem="JMT-KV-Aad" secondAttribute="top" constant="60" id="Eje-6y-Zrj"/>
+                            <constraint firstItem="lLS-OS-738" firstAttribute="top" secondItem="P2g-1P-gbF" secondAttribute="bottom" constant="20" id="Db4-9T-J7L"/>
+                            <constraint firstItem="pcv-t2-VnL" firstAttribute="top" secondItem="JMT-KV-Aad" secondAttribute="top" constant="20" id="Eje-6y-Zrj"/>
                             <constraint firstItem="e9c-GF-jJ9" firstAttribute="centerY" secondItem="cB4-5O-s7C" secondAttribute="centerY" id="FJh-V5-HfE"/>
+                            <constraint firstItem="xdq-se-I9L" firstAttribute="centerY" secondItem="JMT-KV-Aad" secondAttribute="centerY" id="GMo-My-d6v"/>
                             <constraint firstItem="e9c-GF-jJ9" firstAttribute="leading" secondItem="cB4-5O-s7C" secondAttribute="trailing" constant="15" id="NeK-o3-YWn"/>
                             <constraint firstItem="xdq-se-I9L" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="Q72-6B-0Pv"/>
                             <constraint firstItem="pcv-t2-VnL" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="QDa-Tz-nOZ"/>
                             <constraint firstItem="e9c-GF-jJ9" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="Qxs-We-9de"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="RhI-SW-I34"/>
-                            <constraint firstItem="pcv-t2-VnL" firstAttribute="width" secondItem="JMT-KV-Aad" secondAttribute="width" multiplier="0.9" id="XXN-8U-gVq"/>
                             <constraint firstItem="cB4-5O-s7C" firstAttribute="leading" secondItem="JMT-KV-Aad" secondAttribute="leading" constant="62" id="YSU-ny-RKK"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="top" secondItem="xdq-se-I9L" secondAttribute="bottom" constant="10" id="aEQ-wt-9MK"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="width" secondItem="JMT-KV-Aad" secondAttribute="width" multiplier="0.9" id="di8-41-BzN"/>
-                            <constraint firstItem="xdq-se-I9L" firstAttribute="top" secondItem="pcv-t2-VnL" secondAttribute="bottom" constant="12" id="i0Z-Zg-fRI"/>
+                            <constraint firstItem="xdq-se-I9L" firstAttribute="top" secondItem="pcv-t2-VnL" secondAttribute="bottom" constant="10" id="i0Z-Zg-fRI"/>
                             <constraint firstItem="lLS-OS-738" firstAttribute="width" secondItem="JMT-KV-Aad" secondAttribute="width" multiplier="0.9" id="ipE-J8-olx"/>
                             <constraint firstItem="P4F-XL-o6g" firstAttribute="centerY" secondItem="cB4-5O-s7C" secondAttribute="centerY" id="mmX-Qh-hU3"/>
+                            <constraint firstItem="e9c-GF-jJ9" firstAttribute="top" secondItem="lLS-OS-738" secondAttribute="bottom" constant="10" id="r3Y-p7-Uuu"/>
                             <constraint firstItem="JMT-KV-Aad" firstAttribute="trailing" secondItem="P4F-XL-o6g" secondAttribute="trailing" constant="39" id="sNx-8e-5tn"/>
                             <constraint firstItem="lLS-OS-738" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="uj2-aj-hKF"/>
                             <constraint firstItem="P4F-XL-o6g" firstAttribute="leading" relation="lessThanOrEqual" secondItem="e9c-GF-jJ9" secondAttribute="trailing" constant="15" id="yjD-iK-Y8U"/>
@@ -412,7 +401,7 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paracelsus" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjT-vA-mUh">
-                                <rect key="frame" x="148" y="399" width="118" height="33"/>
+                                <rect key="frame" x="148" y="437" width="118" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -426,16 +415,13 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJo-Aw-1tA">
-                                <rect key="frame" x="20.5" y="511.5" width="373" height="255.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="292"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yJo-Aw-1tA" secondAttribute="height" multiplier="373:256" id="Yck-zI-Q3u"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="oCg-bB-2zZ"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wt-qA-mOA">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Wt-qA-mOA" secondAttribute="height" multiplier="187:142" id="yEK-jM-7Wg"/>
                                 </constraints>
@@ -444,7 +430,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;the dose makes the poison&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-3R-jXH">
-                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,24 +453,25 @@ you might get a different reaction based on your result... huh</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BRa-22-yWj" firstAttribute="bottom" secondItem="rHU-5v-LXn" secondAttribute="bottom" constant="17" id="0Cs-Y5-Edn"/>
+                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="1cQ-Dy-g8b"/>
                             <constraint firstItem="yJo-Aw-1tA" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="8rP-NJ-eYA"/>
                             <constraint firstItem="xnI-jw-HCN" firstAttribute="leading" secondItem="rHU-5v-LXn" secondAttribute="trailing" constant="15" id="ATG-uJ-oQp"/>
-                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="top" secondItem="BRa-22-yWj" secondAttribute="top" constant="60" id="CSO-Mr-CLP"/>
+                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="top" secondItem="BRa-22-yWj" secondAttribute="top" constant="20" id="CSO-Mr-CLP"/>
                             <constraint firstItem="iKd-3R-jXH" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="FsU-Pp-VRZ"/>
+                            <constraint firstItem="rjT-vA-mUh" firstAttribute="centerY" secondItem="BRa-22-yWj" secondAttribute="centerY" id="Gz7-SY-KdO"/>
                             <constraint firstItem="4Wt-qA-mOA" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="JOS-w0-VSC"/>
                             <constraint firstItem="iKd-3R-jXH" firstAttribute="top" secondItem="rjT-vA-mUh" secondAttribute="bottom" constant="10" id="Jax-Xc-UP0"/>
-                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="P9f-cG-hfZ"/>
+                            <constraint firstItem="xnI-jw-HCN" firstAttribute="top" secondItem="yJo-Aw-1tA" secondAttribute="bottom" constant="10" id="K0h-v7-v1b"/>
                             <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="PoV-bR-QXe"/>
                             <constraint firstItem="BRa-22-yWj" firstAttribute="trailing" secondItem="ef7-ag-w4y" secondAttribute="trailing" constant="39" id="TD8-8L-QNz"/>
-                            <constraint firstItem="rjT-vA-mUh" firstAttribute="top" secondItem="4Wt-qA-mOA" secondAttribute="bottom" constant="12" id="VgO-3Q-mMA"/>
+                            <constraint firstItem="rjT-vA-mUh" firstAttribute="top" secondItem="4Wt-qA-mOA" secondAttribute="bottom" constant="10" id="VgO-3Q-mMA"/>
                             <constraint firstItem="ef7-ag-w4y" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xnI-jw-HCN" secondAttribute="trailing" constant="15" id="XRl-TE-YMu"/>
                             <constraint firstItem="ef7-ag-w4y" firstAttribute="centerY" secondItem="rHU-5v-LXn" secondAttribute="centerY" id="goH-aK-HoG"/>
-                            <constraint firstItem="4Wt-qA-mOA" firstAttribute="width" secondItem="BRa-22-yWj" secondAttribute="width" multiplier="0.9" id="iIr-wy-gng"/>
                             <constraint firstItem="iKd-3R-jXH" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="lAG-Zq-c7q"/>
                             <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="nEh-WS-xr2"/>
                             <constraint firstItem="rHU-5v-LXn" firstAttribute="leading" secondItem="BRa-22-yWj" secondAttribute="leading" constant="62" id="nTP-Kg-RQI"/>
                             <constraint firstItem="xnI-jw-HCN" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="nY4-GP-iqw"/>
-                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="top" secondItem="iKd-3R-jXH" secondAttribute="bottom" constant="49" id="rB0-F1-GEh"/>
+                            <constraint firstItem="yJo-Aw-1tA" firstAttribute="top" secondItem="iKd-3R-jXH" secondAttribute="bottom" constant="20" id="rB0-F1-GEh"/>
                             <constraint firstItem="xnI-jw-HCN" firstAttribute="centerY" secondItem="rHU-5v-LXn" secondAttribute="centerY" id="zta-ch-uss"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BRa-22-yWj"/>
@@ -507,22 +494,19 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nicolas flamel" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncd-yG-wl7">
-                                <rect key="frame" x="134.5" y="399" width="145" height="33"/>
+                                <rect key="frame" x="134.5" y="436.5" width="145" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="iH4-Ly-nlF">
-                                <rect key="frame" x="20.5" y="511.5" width="373" height="274.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="292"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="iH4-Ly-nlF" secondAttribute="height" multiplier="373:275" id="AFJ-Ys-rcw"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="PET-y6-3Cy"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0Z-nO-IK9">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="t0Z-nO-IK9" secondAttribute="height" multiplier="187:142" id="2QV-ss-RFm"/>
                                 </constraints>
@@ -531,7 +515,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="livin' forever and ever, pal" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf7-r9-mGv">
-                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -565,8 +549,8 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="1OH-Pq-5KK"/>
                             <constraint firstItem="y6X-xX-L9G" firstAttribute="centerY" secondItem="ncV-oy-cbz" secondAttribute="centerY" id="3Ue-dg-0DK"/>
                             <constraint firstItem="iH4-Ly-nlF" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="6Wk-vz-2xW"/>
-                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="Ggt-Zv-G7h"/>
                             <constraint firstItem="iH4-Ly-nlF" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="L2V-FG-3zl"/>
+                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerY" secondItem="ArF-Jl-aE4" secondAttribute="centerY" id="RVI-Gi-Ol9"/>
                             <constraint firstItem="vf7-r9-mGv" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="Rq0-pf-Ckb"/>
                             <constraint firstItem="ncV-oy-cbz" firstAttribute="leading" secondItem="ArF-Jl-aE4" secondAttribute="leading" constant="62" id="Sf4-in-DAh"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="leading" secondItem="ncV-oy-cbz" secondAttribute="trailing" constant="15" id="YXI-sd-i1R"/>
@@ -575,11 +559,12 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerY" secondItem="ncV-oy-cbz" secondAttribute="centerY" id="eya-si-wUi"/>
                             <constraint firstItem="t0Z-nO-IK9" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="ffS-cY-lBk"/>
                             <constraint firstItem="y6X-xX-L9G" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9Ma-R5-6vN" secondAttribute="trailing" constant="15" id="gtj-Ly-BW7"/>
-                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="top" secondItem="ArF-Jl-aE4" secondAttribute="top" constant="60" id="kgS-gH-HJI"/>
-                            <constraint firstItem="iH4-Ly-nlF" firstAttribute="top" secondItem="vf7-r9-mGv" secondAttribute="bottom" constant="49" id="r8z-jP-VCq"/>
+                            <constraint firstItem="t0Z-nO-IK9" firstAttribute="top" secondItem="ArF-Jl-aE4" secondAttribute="top" constant="20" id="kgS-gH-HJI"/>
+                            <constraint firstItem="iH4-Ly-nlF" firstAttribute="top" secondItem="vf7-r9-mGv" secondAttribute="bottom" constant="20" id="r8z-jP-VCq"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="riY-u7-vQW"/>
                             <constraint firstItem="ArF-Jl-aE4" firstAttribute="trailing" secondItem="y6X-xX-L9G" secondAttribute="trailing" constant="39" id="vC5-hy-nkk"/>
-                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="top" secondItem="t0Z-nO-IK9" secondAttribute="bottom" constant="12" id="yDP-is-Bci"/>
+                            <constraint firstItem="9Ma-R5-6vN" firstAttribute="top" secondItem="iH4-Ly-nlF" secondAttribute="bottom" constant="10" id="xOK-y8-QV8"/>
+                            <constraint firstItem="Ncd-yG-wl7" firstAttribute="top" secondItem="t0Z-nO-IK9" secondAttribute="bottom" constant="10" id="yDP-is-Bci"/>
                             <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="zYa-EI-Gcl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ArF-Jl-aE4"/>
@@ -602,22 +587,19 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="goethe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0x-jg-uea">
-                                <rect key="frame" x="168" y="399" width="78" height="33"/>
+                                <rect key="frame" x="168" y="437" width="78" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="piE-zq-ijE">
-                                <rect key="frame" x="20.5" y="511.5" width="373" height="255.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="286"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="piE-zq-ijE" secondAttribute="height" multiplier="373:256" id="oMk-gM-WXQ"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="OO8-gp-gIj"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-Vv-Crf">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WjX-Vv-Crf" secondAttribute="height" multiplier="187:142" id="UjN-9O-KW0"/>
                                 </constraints>
@@ -626,7 +608,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;where's my boy fausto&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liU-oK-75r">
-                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -642,15 +624,16 @@ you might get a different reaction based on your result... huh</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WjX-Vv-Crf" firstAttribute="width" secondItem="619-rH-Q3y" secondAttribute="width" multiplier="0.9" id="5Nb-fD-mtZ"/>
                             <constraint firstItem="liU-oK-75r" firstAttribute="centerX" secondItem="619-rH-Q3y" secondAttribute="centerX" id="7Id-kk-KKH"/>
-                            <constraint firstItem="piE-zq-ijE" firstAttribute="top" secondItem="liU-oK-75r" secondAttribute="bottom" constant="49" id="B6S-fX-jcE"/>
-                            <constraint firstItem="WjX-Vv-Crf" firstAttribute="top" secondItem="619-rH-Q3y" secondAttribute="top" constant="60" id="Dt5-CL-nmz"/>
+                            <constraint firstItem="piE-zq-ijE" firstAttribute="top" secondItem="liU-oK-75r" secondAttribute="bottom" constant="20" id="B6S-fX-jcE"/>
+                            <constraint firstItem="fx5-8m-9kF" firstAttribute="top" secondItem="piE-zq-ijE" secondAttribute="bottom" constant="10" id="BYQ-iU-M01"/>
+                            <constraint firstItem="WjX-Vv-Crf" firstAttribute="top" secondItem="619-rH-Q3y" secondAttribute="top" constant="20" id="Dt5-CL-nmz"/>
                             <constraint firstItem="Z0x-jg-uea" firstAttribute="centerX" secondItem="619-rH-Q3y" secondAttribute="centerX" id="GvM-Xu-u51"/>
                             <constraint firstItem="619-rH-Q3y" firstAttribute="bottom" secondItem="fx5-8m-9kF" secondAttribute="bottom" constant="17" id="Lmy-Jj-Ng6"/>
+                            <constraint firstItem="Z0x-jg-uea" firstAttribute="centerY" secondItem="619-rH-Q3y" secondAttribute="centerY" id="VhZ-bs-amf"/>
                             <constraint firstItem="liU-oK-75r" firstAttribute="top" secondItem="Z0x-jg-uea" secondAttribute="bottom" constant="10" id="XLH-h2-gyf"/>
                             <constraint firstItem="fx5-8m-9kF" firstAttribute="centerX" secondItem="619-rH-Q3y" secondAttribute="centerX" id="Zq4-fO-0Cv"/>
-                            <constraint firstItem="Z0x-jg-uea" firstAttribute="top" secondItem="WjX-Vv-Crf" secondAttribute="bottom" constant="12" id="bjx-J9-P0c"/>
+                            <constraint firstItem="Z0x-jg-uea" firstAttribute="top" secondItem="WjX-Vv-Crf" secondAttribute="bottom" constant="10" id="bjx-J9-P0c"/>
                             <constraint firstItem="liU-oK-75r" firstAttribute="width" secondItem="619-rH-Q3y" secondAttribute="width" multiplier="0.9" id="fip-0D-BhV"/>
                             <constraint firstItem="Z0x-jg-uea" firstAttribute="centerX" secondItem="619-rH-Q3y" secondAttribute="centerX" id="otp-qe-d9c"/>
                             <constraint firstItem="WjX-Vv-Crf" firstAttribute="centerX" secondItem="619-rH-Q3y" secondAttribute="centerX" id="wfx-yr-wPq"/>
@@ -677,31 +660,28 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hermes trismegistus" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2O-cn-cf4">
-                                <rect key="frame" x="97.5" y="399" width="219" height="33"/>
+                                <rect key="frame" x="97.5" y="436.5" width="219" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="KHs-k4-fdS">
-                                <rect key="frame" x="20.5" y="511.5" width="373" height="274.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="286"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="KHs-k4-fdS" secondAttribute="height" multiplier="373:275" id="uCO-zo-bti"/>
-                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="LzB-ud-0Gz"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frD-Bz-H9M">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="frD-Bz-H9M" secondAttribute="height" multiplier="187:142" id="aDJ-Wd-AXi"/>
+                                    <constraint firstAttribute="width" secondItem="frD-Bz-H9M" secondAttribute="height" multiplier="187:142" id="Qnx-ze-Ghx"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="IVs-zb-vf0" kind="embed" id="zER-oe-8CO"/>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;the All is mind, the Universe is mental&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lza-Vn-def">
-                                <rect key="frame" x="20.5" y="442" width="373" height="20.5"/>
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -718,7 +698,7 @@ you might get a different reaction based on your result... huh</string>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="frD-Bz-H9M" firstAttribute="centerX" secondItem="d97-xA-acd" secondAttribute="centerX" id="0lz-eE-txd"/>
-                            <constraint firstItem="frD-Bz-H9M" firstAttribute="top" secondItem="d97-xA-acd" secondAttribute="top" constant="60" id="4nO-7g-nd7"/>
+                            <constraint firstItem="frD-Bz-H9M" firstAttribute="top" secondItem="d97-xA-acd" secondAttribute="top" constant="20" id="4nO-7g-nd7"/>
                             <constraint firstItem="Lza-Vn-def" firstAttribute="centerX" secondItem="d97-xA-acd" secondAttribute="centerX" id="8cG-uc-I8q"/>
                             <constraint firstItem="J2O-cn-cf4" firstAttribute="centerX" secondItem="d97-xA-acd" secondAttribute="centerX" id="BNO-tW-85K"/>
                             <constraint firstItem="d97-xA-acd" firstAttribute="bottom" secondItem="aWc-Cy-zb5" secondAttribute="bottom" constant="17" id="DUV-wV-wJf"/>
@@ -726,11 +706,12 @@ you might get a different reaction based on your result... huh</string>
                             <constraint firstItem="aWc-Cy-zb5" firstAttribute="centerX" secondItem="d97-xA-acd" secondAttribute="centerX" id="K09-xO-sMe"/>
                             <constraint firstItem="Lza-Vn-def" firstAttribute="top" secondItem="J2O-cn-cf4" secondAttribute="bottom" constant="10" id="L35-HX-JWz"/>
                             <constraint firstItem="KHs-k4-fdS" firstAttribute="width" secondItem="d97-xA-acd" secondAttribute="width" multiplier="0.9" id="PrR-W5-EYb"/>
-                            <constraint firstItem="KHs-k4-fdS" firstAttribute="top" secondItem="Lza-Vn-def" secondAttribute="bottom" constant="49" id="TK8-eR-sii"/>
+                            <constraint firstItem="aWc-Cy-zb5" firstAttribute="top" secondItem="KHs-k4-fdS" secondAttribute="bottom" constant="10" id="Rht-2A-VP1"/>
+                            <constraint firstItem="KHs-k4-fdS" firstAttribute="top" secondItem="Lza-Vn-def" secondAttribute="bottom" constant="20" id="TK8-eR-sii"/>
                             <constraint firstItem="J2O-cn-cf4" firstAttribute="centerX" secondItem="d97-xA-acd" secondAttribute="centerX" id="Y19-IW-xVb"/>
-                            <constraint firstItem="frD-Bz-H9M" firstAttribute="width" secondItem="d97-xA-acd" secondAttribute="width" multiplier="0.9" id="Yp1-A5-pLC"/>
                             <constraint firstItem="Lza-Vn-def" firstAttribute="width" secondItem="d97-xA-acd" secondAttribute="width" multiplier="0.9" id="iRc-Nv-f1X"/>
-                            <constraint firstItem="J2O-cn-cf4" firstAttribute="top" secondItem="frD-Bz-H9M" secondAttribute="bottom" constant="12" id="lL2-1T-IwB"/>
+                            <constraint firstItem="J2O-cn-cf4" firstAttribute="top" secondItem="frD-Bz-H9M" secondAttribute="bottom" constant="10" id="lL2-1T-IwB"/>
+                            <constraint firstItem="J2O-cn-cf4" firstAttribute="centerY" secondItem="d97-xA-acd" secondAttribute="centerY" id="qcr-EL-hBB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d97-xA-acd"/>
                     </view>
@@ -752,7 +733,7 @@ you might get a different reaction based on your result... huh</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-gf-w8d">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yIx-gf-w8d" secondAttribute="height" multiplier="187:142" id="tdB-S4-BAj"/>
                                 </constraints>
@@ -761,13 +742,13 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end of the day" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmv-Mw-yVT">
-                                <rect key="frame" x="129" y="419" width="156" height="33"/>
+                                <rect key="frame" x="129" y="437" width="156" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t6C-J6-1ZV">
-                                <rect key="frame" x="20" y="460" width="374" height="264"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6C-J6-1ZV">
+                                <rect key="frame" x="20" y="477.5" width="374" height="281.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">the day has ended
 
@@ -804,7 +785,7 @@ otherwise, feel free to complete your journey again!</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1Q-ck-sws">
-                                <rect key="frame" x="154" y="742" width="106" height="35"/>
+                                <rect key="frame" x="154" y="777" width="106" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="submit color"/>
                                 <connections>
@@ -818,8 +799,8 @@ otherwise, feel free to complete your journey again!</string>
                             <constraint firstItem="5iR-bD-i5S" firstAttribute="bottom" secondItem="wew-4X-4B5" secondAttribute="bottom" constant="17" id="9a1-DW-X2O"/>
                             <constraint firstItem="z1Q-ck-sws" firstAttribute="top" secondItem="t6C-J6-1ZV" secondAttribute="bottom" constant="18" id="BUK-hl-bkP"/>
                             <constraint firstItem="5iR-bD-i5S" firstAttribute="trailing" secondItem="Zcb-4m-ECX" secondAttribute="trailing" constant="66" id="CTB-SB-Xkg"/>
-                            <constraint firstItem="Tmv-Mw-yVT" firstAttribute="top" secondItem="yIx-gf-w8d" secondAttribute="bottom" constant="32" id="EtK-ed-8xu"/>
-                            <constraint firstItem="yIx-gf-w8d" firstAttribute="top" secondItem="5iR-bD-i5S" secondAttribute="top" constant="60" id="GNX-xT-eeT"/>
+                            <constraint firstItem="Tmv-Mw-yVT" firstAttribute="top" secondItem="yIx-gf-w8d" secondAttribute="bottom" constant="10" id="EtK-ed-8xu"/>
+                            <constraint firstItem="yIx-gf-w8d" firstAttribute="top" secondItem="5iR-bD-i5S" secondAttribute="top" constant="20" id="GNX-xT-eeT"/>
                             <constraint firstItem="t6C-J6-1ZV" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="HOD-7A-VhA"/>
                             <constraint firstItem="Tmv-Mw-yVT" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="NDF-y4-f2S"/>
                             <constraint firstItem="S6E-Xc-E9v" firstAttribute="leading" secondItem="wew-4X-4B5" secondAttribute="trailing" constant="15" id="Nvy-S1-Jy7"/>
@@ -828,8 +809,8 @@ otherwise, feel free to complete your journey again!</string>
                             <constraint firstItem="Tmv-Mw-yVT" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="bAq-h3-sNq"/>
                             <constraint firstItem="Zcb-4m-ECX" firstAttribute="centerY" secondItem="wew-4X-4B5" secondAttribute="centerY" id="d61-9O-0ql"/>
                             <constraint firstItem="S6E-Xc-E9v" firstAttribute="centerY" secondItem="wew-4X-4B5" secondAttribute="centerY" id="dbg-Ai-FrD"/>
-                            <constraint firstItem="S6E-Xc-E9v" firstAttribute="top" secondItem="z1Q-ck-sws" secondAttribute="bottom" constant="45" id="fhW-7G-wUk"/>
-                            <constraint firstItem="yIx-gf-w8d" firstAttribute="width" secondItem="5iR-bD-i5S" secondAttribute="width" multiplier="0.9" id="i0N-Ub-WCx"/>
+                            <constraint firstItem="Tmv-Mw-yVT" firstAttribute="centerY" secondItem="5iR-bD-i5S" secondAttribute="centerY" id="eG6-P3-gFh"/>
+                            <constraint firstItem="S6E-Xc-E9v" firstAttribute="top" secondItem="z1Q-ck-sws" secondAttribute="bottom" constant="10" id="fhW-7G-wUk"/>
                             <constraint firstItem="t6C-J6-1ZV" firstAttribute="top" secondItem="Tmv-Mw-yVT" secondAttribute="bottom" constant="8" id="piz-Zy-F90"/>
                             <constraint firstItem="yIx-gf-w8d" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="vok-Dq-Euj"/>
                             <constraint firstItem="S6E-Xc-E9v" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="xkg-if-3CP"/>
@@ -851,7 +832,7 @@ otherwise, feel free to complete your journey again!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1d-YG-sCZ">
-                                <rect key="frame" x="20.5" y="104" width="373" height="283"/>
+                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="K1d-YG-sCZ" secondAttribute="height" multiplier="187:142" id="qYd-Q0-ROW"/>
                                 </constraints>
@@ -859,14 +840,14 @@ otherwise, feel free to complete your journey again!</string>
                                     <segue destination="IVs-zb-vf0" kind="embed" id="5gV-XV-Vhj"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="endgame" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-Hg-ygd">
-                                <rect key="frame" x="154" y="419" width="106" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="arch-alchemist" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-Hg-ygd">
+                                <rect key="frame" x="125.5" y="437" width="163" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="placeholderText" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Al-SEv">
-                                <rect key="frame" x="20" y="460" width="374" height="320"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="placeholderText" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzJ-Al-SEv">
+                                <rect key="frame" x="20" y="477.5" width="374" height="302.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -882,14 +863,14 @@ otherwise, feel free to complete your journey again!</string>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="K1d-YG-sCZ" firstAttribute="top" secondItem="BjR-SL-oiC" secondAttribute="top" constant="60" id="3Mf-GM-msS"/>
+                            <constraint firstItem="K1d-YG-sCZ" firstAttribute="top" secondItem="BjR-SL-oiC" secondAttribute="top" constant="20" id="3Mf-GM-msS"/>
                             <constraint firstItem="pzJ-Al-SEv" firstAttribute="centerX" secondItem="BjR-SL-oiC" secondAttribute="centerX" id="5LC-pb-l4X"/>
-                            <constraint firstItem="tK4-Hg-ygd" firstAttribute="top" secondItem="K1d-YG-sCZ" secondAttribute="bottom" constant="32" id="8KO-9z-fQy"/>
+                            <constraint firstItem="tK4-Hg-ygd" firstAttribute="top" secondItem="K1d-YG-sCZ" secondAttribute="bottom" constant="10" id="8KO-9z-fQy"/>
                             <constraint firstItem="dsd-KK-KT1" firstAttribute="top" secondItem="pzJ-Al-SEv" secondAttribute="bottom" constant="30" id="Sug-jZ-Ugg"/>
+                            <constraint firstItem="tK4-Hg-ygd" firstAttribute="centerY" secondItem="BjR-SL-oiC" secondAttribute="centerY" id="UkM-Sz-c9v"/>
                             <constraint firstItem="pzJ-Al-SEv" firstAttribute="leading" secondItem="BjR-SL-oiC" secondAttribute="leading" constant="20" id="ZY7-lK-52E"/>
                             <constraint firstItem="BjR-SL-oiC" firstAttribute="bottom" secondItem="dsd-KK-KT1" secondAttribute="bottom" constant="17" id="b5e-PE-fJ4"/>
                             <constraint firstItem="dsd-KK-KT1" firstAttribute="centerX" secondItem="BjR-SL-oiC" secondAttribute="centerX" id="eUA-aZ-Bux"/>
-                            <constraint firstItem="K1d-YG-sCZ" firstAttribute="width" secondItem="BjR-SL-oiC" secondAttribute="width" multiplier="0.9" id="j45-DN-VSp"/>
                             <constraint firstItem="tK4-Hg-ygd" firstAttribute="centerX" secondItem="BjR-SL-oiC" secondAttribute="centerX" id="m7B-Bl-BVN"/>
                             <constraint firstItem="K1d-YG-sCZ" firstAttribute="centerX" secondItem="BjR-SL-oiC" secondAttribute="centerX" id="ngY-Hw-gZD"/>
                             <constraint firstItem="tK4-Hg-ygd" firstAttribute="centerX" secondItem="BjR-SL-oiC" secondAttribute="centerX" id="pTn-bU-raR"/>
@@ -897,6 +878,9 @@ otherwise, feel free to complete your journey again!</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BjR-SL-oiC"/>
                     </view>
+                    <connections>
+                        <outlet property="resultTextView" destination="pzJ-Al-SEv" id="FKH-xW-4YS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxH-Wh-TOB" sceneMemberID="firstResponder"/>
             </objects>
@@ -907,11 +891,11 @@ otherwise, feel free to complete your journey again!</string>
         <segue reference="pfK-Qf-COl"/>
         <segue reference="QbG-I7-XiD"/>
         <segue reference="lY8-8f-0c7"/>
-        <segue reference="IM8-O5-3CM"/>
-        <segue reference="Y4P-4S-JgP"/>
+        <segue reference="TN2-QG-LyQ"/>
+        <segue reference="ptM-1A-mFg"/>
         <segue reference="q0q-ey-GVv"/>
         <segue reference="Vn1-kI-Jy5"/>
-        <segue reference="32C-Vw-C6D"/>
-        <segue reference="OfN-gr-yEh"/>
+        <segue reference="5bB-Tj-RG3"/>
+        <segue reference="vIH-F4-TAV"/>
     </inferredMetricsTieBreakers>
 </document>

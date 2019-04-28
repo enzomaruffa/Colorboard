@@ -31,4 +31,7 @@ class Player {
         colorList = [UIColor.white]
     }
     
+    public func getCurrentColor() -> UIColor {
+        return colorList.last!
+    }
 }

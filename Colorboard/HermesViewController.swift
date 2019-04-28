@@ -21,7 +21,7 @@ class HermesViewController: LocationViewController {
 
         let player = Player.getInstance()
         
-        hermesItens = Element.getRandomHermes(playerColor: player.colorList.last!, targetColor: player.goldColor, amount: hermesItensAmount)
+        hermesItens = Element.getRandomHermes(playerColor: player.getCurrentColor(), targetColor: player.goldColor, amount: hermesItensAmount)
         
         delegatee = ColorTableDelegatee(elements: hermesItens)
         delegatee.delegate = self
