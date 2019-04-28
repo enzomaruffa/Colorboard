@@ -23,7 +23,23 @@ class LocationViewController: UIViewController, ElementPicker {
     
     func didSelect(element: Element) {
         colorView?.applyElement(element: element)
+        messageBox(messageTitle: element.name, messageAlert: element.description, messageBoxStyle: .alert, alertActionStyle: .default, completionHandler: {})
     }
+    
+    func messageBox(messageTitle: String, messageAlert: String, messageBoxStyle: UIAlertController.Style, alertActionStyle: UIAlertAction.Style, completionHandler: @escaping () -> Void)
+    {
+        let alert = UIAlertController(title: messageTitle, message: messageAlert, preferredStyle: messageBoxStyle)
+        
+        let okAction = UIAlertAction(title: "Ok", style: alertActionStyle) { _ in
+            completionHandler() // This will only get called after okay is tapped in the alert
+        }
+        
+        alert.addAction(okAction)
+        
+        present(alert, animated: true, completion: nil)
+    }
+    
+    
 
     /*
     // MARK: - Navigation

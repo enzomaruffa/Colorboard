@@ -21,9 +21,6 @@ class ColorsViewController: UIViewController {
         smallCircle.backgroundColor = player.goldColor
         smallCircle.layer.borderColor = UIColor.white.cgColor
         
-        print("generating view")
-        print(player.endingGame)
-        
         if player.endingGame {
             let durationColor : Double = 2.5 / Double(player.colorList.count)
             paintAnimation(current: 0, duration: durationColor)
