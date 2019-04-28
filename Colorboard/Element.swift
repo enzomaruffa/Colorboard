@@ -307,16 +307,16 @@ class Element {
     public static func getHermes(playerColor: UIColor, targetColor: UIColor) -> [Element] {
         var hermesListCopy = hermesList
         
-        let oppositeColor = Element("Opposite color", "It's the complimentary color!", playerColor.opposite(), false)
+        let oppositeColor = Element("Opposite color", "It's the complimentary color! 2 principle...", playerColor.opposite(), false)
         hermesListCopy.append(oppositeColor)
         
         let randomColor1 = Element("All's elixir", "All changes aaaaall the time, it's so boring", UIColor.randomColor(), false)
         hermesListCopy.append(randomColor1)
         
-        let lightenedColor = Element("Lightened color", "Your color, lighter!", playerColor.lighten(amount: CGFloat(0.15)), true)
+        let lightenedColor = Element("Lightened color", "Your color, lighter! Harmony...", playerColor.lighten(amount: CGFloat(0.15)), true)
         hermesListCopy.append(lightenedColor)
         
-        let darkenedColor = Element("Darkened color", "Your color, darker!", playerColor.darken(amount: CGFloat(0.15)), true)
+        let darkenedColor = Element("Darkened color", "Your color, darker! Harmony...", playerColor.darken(amount: CGFloat(0.15)), true)
         hermesListCopy.append(darkenedColor)
         
         return hermesListCopy
