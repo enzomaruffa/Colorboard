@@ -42,4 +42,9 @@ class ColorTableDelegatee : NSObject, UITableViewDelegate, UITableViewDataSource
         let element = elementList[indexPath.row]
         delegate?.didSelect(element: element)
     }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        let element = elementList[indexPath.row]
+        delegate?.didSelectInfo(element: element)
+    }
 }

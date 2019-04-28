@@ -10,4 +10,5 @@ import Foundation
 
 protocol ElementPicker: class {
     func didSelect(element: Element)
+    func didSelectInfo(element: Element)
 }
