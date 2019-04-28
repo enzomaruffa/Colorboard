@@ -43,20 +43,22 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
                                 <rect key="frame" x="20" y="477.5" width="374" height="279.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">you are now in the path of the Alchemist! 
+                                <mutableString key="text">you are now in the path of the Alchemist! 
 as an alchemist, it is your duty to create gold, of course. 
 
 to do so, you are going to work with colors! 
 i mean, we do not need REAL gold, just something that looks like it! 
 
-you'll have, each day, different ingredients that you can mix to your color. as expected, each location will have different ingredientes too! be wise!
+you'll have, each day, different ingredients that you can mix to your color. as expected, each location will have different ingredientes too! be wise! 
+
+also, you can use an ingredient as much as you like - not at all, once, twice or a hundred times!
 
 your current color is represented by the bigger circle, while your target gold color is the smaller one!
 
 each transformation has a name and a color. if this color is a circle, it will mix with your current color. if it's a square, it will overwrite your current color!
 
 once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
-you might get a different reaction based on your result... huh</string>
+you might get a different reaction based on your result... huh</mutableString>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -230,7 +232,7 @@ you might get a different reaction based on your result... huh</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="9s1-4r-Ksd">
-                                <rect key="frame" x="20.5" y="540.5" width="373" height="271.5"/>
+                                <rect key="frame" x="20.5" y="520" width="373" height="292"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <viewLayoutGuide key="safeArea" id="meM-aA-4GD"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -244,8 +246,8 @@ you might get a different reaction based on your result... huh</string>
                                     <segue destination="IVs-zb-vf0" kind="embed" id="HJM-r2-XOB"/>
                                 </connections>
                             </containerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;the garden is where the beauty lives&quot; - macaulay culkin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN8-aT-KdB">
-                                <rect key="frame" x="20.5" y="479.5" width="373" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="it's biiiiig" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN8-aT-KdB">
+                                <rect key="frame" x="20.5" y="479.5" width="373" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1179,7 +1181,9 @@ a great polymath!
 
 goethe wrote some really cool stuff, you should check it out
 
-his work with colors is also soooooo cool. you'll see he has some weird colors!</string>
+his work with colors is also soooooo cool. you'll see he has some weird colors!
+
+that might be a tip...</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -1316,6 +1320,6 @@ be ready to see some pretty cool tricks he has under his sleeve - or should i sa
         <segue reference="jrx-DM-c8o"/>
         <segue reference="NGV-VS-Ts1"/>
         <segue reference="5bB-Tj-RG3"/>
-        <segue reference="vIH-F4-TAV"/>
+        <segue reference="HJM-r2-XOB"/>
     </inferredMetricsTieBreakers>
 </document>

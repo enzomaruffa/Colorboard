@@ -275,10 +275,10 @@ class Element {
         let oppositeMiddleGroundColor = Element("Weird color", "It actually is the opposite of the gold color!", targetColor.opposite(), true)
         goetheListCopy.append(oppositeMiddleGroundColor)
         
-        let shuffledColor1 = Element("Shuffled color", "Randomly generated using your RGB values!", playerColor.shuffled(), true)
+        let shuffledColor1 = Element("Shuffled color", "Randomly generated using your current RGB values!", playerColor.shuffled(), true)
         goetheListCopy.append(shuffledColor1)
         
-        let shuffledColor2 = Element("Shuffled color mixture", "Randomly generated using your RGB values!", playerColor.shuffled(), false)
+        let shuffledColor2 = Element("Shuffled color mixture", "Randomly generated using your current RGB values!", playerColor.shuffled(), false)
         goetheListCopy.append(shuffledColor2)
         
         let randomColor1 = Element("Random color", "As random as it can be", UIColor.randomColor(), true)
