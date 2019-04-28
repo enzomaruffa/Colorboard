@@ -16,7 +16,6 @@ class ColorTableDelegatee : NSObject, UITableViewDelegate, UITableViewDataSource
     
     init(elements : [Element]) {
         elementList = elements
-        print(elementList)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +26,6 @@ class ColorTableDelegatee : NSObject, UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellColor", for: indexPath) as! ColorCell
         
         cell.setupCell(element: elementList[indexPath.row])
-        print(elementList[indexPath.row].name)
         
         return cell
     }

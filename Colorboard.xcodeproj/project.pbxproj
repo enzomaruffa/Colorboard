@@ -33,6 +33,7 @@
 		47EEB0452274BA1800FA1D12 /* GoetheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0442274BA1800FA1D12 /* GoetheViewController.swift */; };
 		47EEB0472274BD7A00FA1D12 /* EndOfTheDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0462274BD7A00FA1D12 /* EndOfTheDayViewController.swift */; };
 		47EEB0492274BE7C00FA1D12 /* EndgameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EEB0482274BE7C00FA1D12 /* EndgameViewController.swift */; };
+		47FFA61322753D1100397A8F /* WalkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFA61222753D1100397A8F /* WalkingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		47EEB0442274BA1800FA1D12 /* GoetheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoetheViewController.swift; sourceTree = "<group>"; };
 		47EEB0462274BD7A00FA1D12 /* EndOfTheDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndOfTheDayViewController.swift; sourceTree = "<group>"; };
 		47EEB0482274BE7C00FA1D12 /* EndgameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndgameViewController.swift; sourceTree = "<group>"; };
+		47FFA61222753D1100397A8F /* WalkingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				479D54DA22720416001640C9 /* Player.swift */,
 				47AB5B1022731DF200CF4C43 /* UIColorExtension.swift */,
 				479D54A82270B3CB001640C9 /* ViewController.swift */,
+				47FFA61222753D1100397A8F /* WalkingViewController.swift */,
 			);
 			path = Colorboard;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				479D54A72270B3CB001640C9 /* AppDelegate.swift in Sources */,
 				47B4EB8E2273943D00046BD0 /* GardenViewController.swift in Sources */,
 				47EEB0412274148E00FA1D12 /* LocationViewController.swift in Sources */,
+				47FFA61322753D1100397A8F /* WalkingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

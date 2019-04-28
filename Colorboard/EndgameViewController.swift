@@ -35,6 +35,8 @@ class EndgameViewController: UIViewController {
             text = "mamma mia is this some kind of joke? \n\n see, using our dear Euclidean Distance formula - with some carefully placed wights - our precision is close to \(distanceToColor) \n\n yeah no pretty words. die. \n\n *you feel numb. everything whitens. is this a wagon? what are those stormcloacks doing here? 'hey, you. finally awake...' is this skyrim? oof.*"
         }
         resultTextView.text = text
+        
+        player.endingGame = false
 
         // Do any additional setup after loading the view.
     }

@@ -1,5 +1,5 @@
 //
-//  EndOfTheDayViewController.swift
+//  WalkingViewController.swift
 //  Colorboard
 //
 //  Created by Enzo Maruffa Moreira on 27/04/19.
@@ -8,16 +8,23 @@
 
 import UIKit
 
-class EndOfTheDayViewController: UIViewController {
+class WalkingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
     
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "endingGame") {
-            Player.getInstance().endingGame = true
-        }
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }

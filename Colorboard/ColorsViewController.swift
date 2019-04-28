@@ -21,10 +21,16 @@ class ColorsViewController: UIViewController {
         smallCircle.backgroundColor = player.goldColor
         smallCircle.layer.borderColor = UIColor.white.cgColor
         
-        let durationColor : Double = 0.8 / Double(player.colorList.count)
-        paintAnimation(current: 0, duration: durationColor)
+        print("generating view")
+        print(player.endingGame)
         
-        bigCircle.layer.borderColor = UIColor.black.cgColor
+        if player.endingGame {
+            let durationColor : Double = 2.5 / Double(player.colorList.count)
+            paintAnimation(current: 0, duration: durationColor)
+            player.endingGame = false
+        } else {
+            setBigCircleColor(color: player.getCurrentColor())
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -47,8 +53,6 @@ class ColorsViewController: UIViewController {
     func createCircles() {
         let coeficient = CGFloat(0.5)
         
-        print(bigCircle.frame.height)
-        
         var radius = (bigCircle.frame.height) * coeficient
         bigCircle.layer.cornerRadius = radius
         bigCircle.layer.borderWidth = 2
@@ -58,8 +62,8 @@ class ColorsViewController: UIViewController {
         smallCircle.layer.borderWidth = 2
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        print("view will appear")
+    
+    override func viewDidLayoutSubviews() {
         createCircles()
     }
     
@@ -76,7 +80,6 @@ class ColorsViewController: UIViewController {
     
     public func applyElement(element : Element) {
         if element.isTypeMix {
-            print("Mixing colors")
             mixBigCircleColor(color: element.color, percentage: 50)
         } else {
             setBigCircleColor(color: element.color)

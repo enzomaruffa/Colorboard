@@ -29,7 +29,13 @@ extension UIColor {
     }
     
     func borderByBackground() -> UIColor {
-        return self == #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) ?  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        var (r1, g1, b1, a1): (CGFloat, CGFloat, CGFloat, CGFloat) = (0, 0, 0, 0)
+        guard self.getRed(&r1, green: &g1, blue: &b1, alpha: &a1) else { return UIColor.white }
+        
+        if r1 >= 0.99 && g1 >= 0.99 && b1 >= 0.99 {
+            return UIColor.black
+        }
+        return UIColor.white
     }
     
     func distanceToColor(_ color: UIColor) -> Double {

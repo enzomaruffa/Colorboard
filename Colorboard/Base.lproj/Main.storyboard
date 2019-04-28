@@ -43,7 +43,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izG-tS-HcS">
                                 <rect key="frame" x="20" y="477.5" width="374" height="279.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">you are now in the path of the Alchemist! 
+                                <string key="text">you are now in the path of the Alchemist! 
 as an alchemist, it is your duty to create gold, of course. 
 
 to do so, you are going to work with colors! 
@@ -56,7 +56,7 @@ your current color is represented by the bigger circle, while your target gold c
 each transformation has a name and a color. if this color is a circle, it will mix with your current color. if it's a square, it will overwrite your current color!
 
 once you feel confortable with what you got, feel free to submit to the arch-alchemist at the end of the day! 
-you might get a different reaction based on your result... huh</mutableString>
+you might get a different reaction based on your result... huh</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -140,7 +140,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9f-kb-XHf">
-                                <rect key="frame" x="229" y="816" width="115" height="29"/>
+                                <rect key="frame" x="234" y="816" width="115" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to the forest"/>
                                 <connections>
@@ -180,7 +180,7 @@ you might get a different reaction based on your result... huh</mutableString>
                         <constraints>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="top" secondItem="Kvd-dl-ajA" secondAttribute="bottom" constant="17" id="4lv-ue-dej"/>
                             <constraint firstItem="CIG-xl-UI5" firstAttribute="top" secondItem="er2-wh-aDb" secondAttribute="bottom" constant="10" id="Aje-kG-Q7u"/>
-                            <constraint firstItem="k9f-kb-XHf" firstAttribute="leading" relation="lessThanOrEqual" secondItem="UcG-O9-ubA" secondAttribute="trailing" constant="15" id="BhL-6g-i4u"/>
+                            <constraint firstItem="k9f-kb-XHf" firstAttribute="leading" secondItem="UcG-O9-ubA" secondAttribute="trailing" constant="20" id="BhL-6g-i4u"/>
                             <constraint firstItem="CIG-xl-UI5" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="Eh6-rR-MUV"/>
                             <constraint firstItem="er2-wh-aDb" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="J0j-Yb-5EC"/>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="centerY" secondItem="MFL-Ws-XcQ" secondAttribute="centerY" id="KVc-hW-Eer"/>
@@ -190,11 +190,9 @@ you might get a different reaction based on your result... huh</mutableString>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="leading" secondItem="MFL-Ws-XcQ" secondAttribute="trailing" constant="15" id="cMK-1F-VWQ"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="top" secondItem="CIG-xl-UI5" secondAttribute="bottom" constant="25" id="eQC-W6-qDC"/>
                             <constraint firstItem="UcG-O9-ubA" firstAttribute="centerX" secondItem="hfy-in-Efu" secondAttribute="centerX" id="jY2-yh-Fpz"/>
-                            <constraint firstItem="hfy-in-Efu" firstAttribute="trailing" secondItem="k9f-kb-XHf" secondAttribute="trailing" constant="70" id="oBI-2i-3KC"/>
                             <constraint firstItem="Kvd-dl-ajA" firstAttribute="width" secondItem="hfy-in-Efu" secondAttribute="width" multiplier="0.9" id="vXn-vA-HDn"/>
                             <constraint firstItem="hfy-in-Efu" firstAttribute="bottom" secondItem="MFL-Ws-XcQ" secondAttribute="bottom" constant="17" id="x6l-yO-fj6"/>
                             <constraint firstItem="er2-wh-aDb" firstAttribute="top" secondItem="hfy-in-Efu" secondAttribute="top" constant="20" id="yu7-C9-DKN"/>
-                            <constraint firstItem="MFL-Ws-XcQ" firstAttribute="leading" secondItem="hfy-in-Efu" secondAttribute="leading" constant="62" id="z5E-cx-vwo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hfy-in-Efu"/>
                     </view>
@@ -256,7 +254,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="601-41-o9O">
-                                <rect key="frame" x="229" y="816" width="146" height="29"/>
+                                <rect key="frame" x="234" y="816" width="146" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Nicolas Flamel"/>
                                 <connections>
@@ -266,8 +264,6 @@ you might get a different reaction based on your result... huh</mutableString>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tGL-ed-Mq4" firstAttribute="trailing" secondItem="601-41-o9O" secondAttribute="trailing" constant="39" id="4Ly-UO-A6T"/>
-                            <constraint firstItem="ciM-Pz-CwG" firstAttribute="leading" secondItem="tGL-ed-Mq4" secondAttribute="leading" constant="62" id="6Ju-EF-1BU"/>
                             <constraint firstItem="DX0-gG-che" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="7il-2L-a1Z"/>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="8zU-MM-Xx9"/>
                             <constraint firstItem="DN8-aT-KdB" firstAttribute="centerX" secondItem="tGL-ed-Mq4" secondAttribute="centerX" id="Ac1-HQ-L6q"/>
@@ -284,7 +280,7 @@ you might get a different reaction based on your result... huh</mutableString>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="leading" secondItem="ciM-Pz-CwG" secondAttribute="trailing" constant="15" id="s0d-RF-ngS"/>
                             <constraint firstItem="Eu4-WJ-7d1" firstAttribute="centerY" secondItem="ciM-Pz-CwG" secondAttribute="centerY" id="s1f-mX-p6D"/>
                             <constraint firstItem="tGL-ed-Mq4" firstAttribute="bottom" secondItem="ciM-Pz-CwG" secondAttribute="bottom" constant="17" id="vMW-Me-lML"/>
-                            <constraint firstItem="601-41-o9O" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Eu4-WJ-7d1" secondAttribute="trailing" constant="15" id="vMf-f2-rWW"/>
+                            <constraint firstItem="601-41-o9O" firstAttribute="leading" secondItem="Eu4-WJ-7d1" secondAttribute="trailing" constant="20" id="vMf-f2-rWW"/>
                             <constraint firstItem="DX0-gG-che" firstAttribute="top" secondItem="g74-Sw-YEa" secondAttribute="bottom" constant="10" id="yM6-rZ-wp7"/>
                             <constraint firstItem="DX0-gG-che" firstAttribute="centerY" secondItem="tGL-ed-Mq4" secondAttribute="centerY" id="zdv-mN-Kbu"/>
                         </constraints>
@@ -343,7 +339,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4F-XL-o6g">
-                                <rect key="frame" x="229" y="816" width="146" height="29"/>
+                                <rect key="frame" x="234" y="816" width="146" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Nicolas Flamel"/>
                                 <connections>
@@ -369,16 +365,14 @@ you might get a different reaction based on your result... huh</mutableString>
                             <constraint firstItem="pcv-t2-VnL" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="QDa-Tz-nOZ"/>
                             <constraint firstItem="e9c-GF-jJ9" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="Qxs-We-9de"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="RhI-SW-I34"/>
-                            <constraint firstItem="cB4-5O-s7C" firstAttribute="leading" secondItem="JMT-KV-Aad" secondAttribute="leading" constant="62" id="YSU-ny-RKK"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="top" secondItem="xdq-se-I9L" secondAttribute="bottom" constant="10" id="aEQ-wt-9MK"/>
                             <constraint firstItem="P2g-1P-gbF" firstAttribute="width" secondItem="JMT-KV-Aad" secondAttribute="width" multiplier="0.9" id="di8-41-BzN"/>
                             <constraint firstItem="xdq-se-I9L" firstAttribute="top" secondItem="pcv-t2-VnL" secondAttribute="bottom" constant="10" id="i0Z-Zg-fRI"/>
                             <constraint firstItem="lLS-OS-738" firstAttribute="width" secondItem="JMT-KV-Aad" secondAttribute="width" multiplier="0.9" id="ipE-J8-olx"/>
                             <constraint firstItem="P4F-XL-o6g" firstAttribute="centerY" secondItem="cB4-5O-s7C" secondAttribute="centerY" id="mmX-Qh-hU3"/>
                             <constraint firstItem="e9c-GF-jJ9" firstAttribute="top" secondItem="lLS-OS-738" secondAttribute="bottom" constant="10" id="r3Y-p7-Uuu"/>
-                            <constraint firstItem="JMT-KV-Aad" firstAttribute="trailing" secondItem="P4F-XL-o6g" secondAttribute="trailing" constant="39" id="sNx-8e-5tn"/>
                             <constraint firstItem="lLS-OS-738" firstAttribute="centerX" secondItem="JMT-KV-Aad" secondAttribute="centerX" id="uj2-aj-hKF"/>
-                            <constraint firstItem="P4F-XL-o6g" firstAttribute="leading" relation="lessThanOrEqual" secondItem="e9c-GF-jJ9" secondAttribute="trailing" constant="15" id="yjD-iK-Y8U"/>
+                            <constraint firstItem="P4F-XL-o6g" firstAttribute="leading" secondItem="e9c-GF-jJ9" secondAttribute="trailing" constant="20" id="yjD-iK-Y8U"/>
                             <constraint firstItem="JMT-KV-Aad" firstAttribute="bottom" secondItem="cB4-5O-s7C" secondAttribute="bottom" constant="17" id="zvG-SF-TZJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JMT-KV-Aad"/>
@@ -401,7 +395,7 @@ you might get a different reaction based on your result... huh</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paracelsus" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rjT-vA-mUh">
-                                <rect key="frame" x="148" y="437" width="118" height="32.5"/>
+                                <rect key="frame" x="148" y="436.5" width="118" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -421,7 +415,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Wt-qA-mOA">
-                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="4Wt-qA-mOA" secondAttribute="height" multiplier="187:142" id="yEK-jM-7Wg"/>
                                 </constraints>
@@ -442,7 +436,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-ag-w4y">
-                                <rect key="frame" x="229" y="816" width="146" height="29"/>
+                                <rect key="frame" x="229" y="816" width="104" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Hermes"/>
                                 <connections>
@@ -463,9 +457,8 @@ you might get a different reaction based on your result... huh</mutableString>
                             <constraint firstItem="iKd-3R-jXH" firstAttribute="top" secondItem="rjT-vA-mUh" secondAttribute="bottom" constant="10" id="Jax-Xc-UP0"/>
                             <constraint firstItem="xnI-jw-HCN" firstAttribute="top" secondItem="yJo-Aw-1tA" secondAttribute="bottom" constant="10" id="K0h-v7-v1b"/>
                             <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="PoV-bR-QXe"/>
-                            <constraint firstItem="BRa-22-yWj" firstAttribute="trailing" secondItem="ef7-ag-w4y" secondAttribute="trailing" constant="39" id="TD8-8L-QNz"/>
                             <constraint firstItem="rjT-vA-mUh" firstAttribute="top" secondItem="4Wt-qA-mOA" secondAttribute="bottom" constant="10" id="VgO-3Q-mMA"/>
-                            <constraint firstItem="ef7-ag-w4y" firstAttribute="leading" relation="lessThanOrEqual" secondItem="xnI-jw-HCN" secondAttribute="trailing" constant="15" id="XRl-TE-YMu"/>
+                            <constraint firstItem="ef7-ag-w4y" firstAttribute="leading" secondItem="xnI-jw-HCN" secondAttribute="trailing" constant="15" id="XRl-TE-YMu"/>
                             <constraint firstItem="ef7-ag-w4y" firstAttribute="centerY" secondItem="rHU-5v-LXn" secondAttribute="centerY" id="goH-aK-HoG"/>
                             <constraint firstItem="iKd-3R-jXH" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="lAG-Zq-c7q"/>
                             <constraint firstItem="rjT-vA-mUh" firstAttribute="centerX" secondItem="BRa-22-yWj" secondAttribute="centerX" id="nEh-WS-xr2"/>
@@ -521,7 +514,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncV-oy-cbz">
-                                <rect key="frame" x="62" y="816" width="123" height="29"/>
+                                <rect key="frame" x="85" y="816" width="100" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Goethe"/>
                                 <connections>
@@ -529,7 +522,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6X-xX-L9G">
-                                <rect key="frame" x="229" y="816" width="146" height="29"/>
+                                <rect key="frame" x="234" y="816" width="104" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to Hermes"/>
                                 <connections>
@@ -552,17 +545,15 @@ you might get a different reaction based on your result... huh</mutableString>
                             <constraint firstItem="iH4-Ly-nlF" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="L2V-FG-3zl"/>
                             <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerY" secondItem="ArF-Jl-aE4" secondAttribute="centerY" id="RVI-Gi-Ol9"/>
                             <constraint firstItem="vf7-r9-mGv" firstAttribute="width" secondItem="ArF-Jl-aE4" secondAttribute="width" multiplier="0.9" id="Rq0-pf-Ckb"/>
-                            <constraint firstItem="ncV-oy-cbz" firstAttribute="leading" secondItem="ArF-Jl-aE4" secondAttribute="leading" constant="62" id="Sf4-in-DAh"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="leading" secondItem="ncV-oy-cbz" secondAttribute="trailing" constant="15" id="YXI-sd-i1R"/>
                             <constraint firstItem="vf7-r9-mGv" firstAttribute="top" secondItem="Ncd-yG-wl7" secondAttribute="bottom" constant="10" id="YgG-Po-LQY"/>
                             <constraint firstItem="ArF-Jl-aE4" firstAttribute="bottom" secondItem="ncV-oy-cbz" secondAttribute="bottom" constant="17" id="eSa-wh-MQ3"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerY" secondItem="ncV-oy-cbz" secondAttribute="centerY" id="eya-si-wUi"/>
                             <constraint firstItem="t0Z-nO-IK9" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="ffS-cY-lBk"/>
-                            <constraint firstItem="y6X-xX-L9G" firstAttribute="leading" relation="lessThanOrEqual" secondItem="9Ma-R5-6vN" secondAttribute="trailing" constant="15" id="gtj-Ly-BW7"/>
+                            <constraint firstItem="y6X-xX-L9G" firstAttribute="leading" secondItem="9Ma-R5-6vN" secondAttribute="trailing" constant="20" id="gtj-Ly-BW7"/>
                             <constraint firstItem="t0Z-nO-IK9" firstAttribute="top" secondItem="ArF-Jl-aE4" secondAttribute="top" constant="20" id="kgS-gH-HJI"/>
                             <constraint firstItem="iH4-Ly-nlF" firstAttribute="top" secondItem="vf7-r9-mGv" secondAttribute="bottom" constant="20" id="r8z-jP-VCq"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="riY-u7-vQW"/>
-                            <constraint firstItem="ArF-Jl-aE4" firstAttribute="trailing" secondItem="y6X-xX-L9G" secondAttribute="trailing" constant="39" id="vC5-hy-nkk"/>
                             <constraint firstItem="9Ma-R5-6vN" firstAttribute="top" secondItem="iH4-Ly-nlF" secondAttribute="bottom" constant="10" id="xOK-y8-QV8"/>
                             <constraint firstItem="Ncd-yG-wl7" firstAttribute="top" secondItem="t0Z-nO-IK9" secondAttribute="bottom" constant="10" id="yDP-is-Bci"/>
                             <constraint firstItem="Ncd-yG-wl7" firstAttribute="centerX" secondItem="ArF-Jl-aE4" secondAttribute="centerX" id="zYa-EI-Gcl"/>
@@ -587,7 +578,7 @@ you might get a different reaction based on your result... huh</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="goethe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0x-jg-uea">
-                                <rect key="frame" x="168" y="437" width="78" height="32.5"/>
+                                <rect key="frame" x="168" y="436.5" width="78" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -599,7 +590,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-Vv-Crf">
-                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="WjX-Vv-Crf" secondAttribute="height" multiplier="187:142" id="UjN-9O-KW0"/>
                                 </constraints>
@@ -733,7 +724,7 @@ you might get a different reaction based on your result... huh</mutableString>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIx-gf-w8d">
-                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="yIx-gf-w8d" secondAttribute="height" multiplier="187:142" id="tdB-S4-BAj"/>
                                 </constraints>
@@ -742,7 +733,7 @@ you might get a different reaction based on your result... huh</mutableString>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end of the day" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmv-Mw-yVT">
-                                <rect key="frame" x="129" y="437" width="156" height="32.5"/>
+                                <rect key="frame" x="129" y="436.5" width="156" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -763,7 +754,7 @@ otherwise, feel free to complete your journey again!</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcb-4m-ECX">
-                                <rect key="frame" x="229" y="816" width="119" height="29"/>
+                                <rect key="frame" x="234" y="816" width="115" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="head to the forest"/>
                                 <connections>
@@ -789,23 +780,21 @@ otherwise, feel free to complete your journey again!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="submit color"/>
                                 <connections>
-                                    <segue destination="MIf-R5-LDf" kind="show" id="LMw-Rg-lrl"/>
+                                    <segue destination="MIf-R5-LDf" kind="show" identifier="endingGame" id="LMw-Rg-lrl"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Zcb-4m-ECX" firstAttribute="leading" relation="lessThanOrEqual" secondItem="S6E-Xc-E9v" secondAttribute="trailing" constant="15" id="4Zs-ZB-Ofg"/>
+                            <constraint firstItem="Zcb-4m-ECX" firstAttribute="leading" secondItem="S6E-Xc-E9v" secondAttribute="trailing" constant="20" id="4Zs-ZB-Ofg"/>
                             <constraint firstItem="5iR-bD-i5S" firstAttribute="bottom" secondItem="wew-4X-4B5" secondAttribute="bottom" constant="17" id="9a1-DW-X2O"/>
                             <constraint firstItem="z1Q-ck-sws" firstAttribute="top" secondItem="t6C-J6-1ZV" secondAttribute="bottom" constant="18" id="BUK-hl-bkP"/>
-                            <constraint firstItem="5iR-bD-i5S" firstAttribute="trailing" secondItem="Zcb-4m-ECX" secondAttribute="trailing" constant="66" id="CTB-SB-Xkg"/>
                             <constraint firstItem="Tmv-Mw-yVT" firstAttribute="top" secondItem="yIx-gf-w8d" secondAttribute="bottom" constant="10" id="EtK-ed-8xu"/>
                             <constraint firstItem="yIx-gf-w8d" firstAttribute="top" secondItem="5iR-bD-i5S" secondAttribute="top" constant="20" id="GNX-xT-eeT"/>
                             <constraint firstItem="t6C-J6-1ZV" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="HOD-7A-VhA"/>
                             <constraint firstItem="Tmv-Mw-yVT" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="NDF-y4-f2S"/>
                             <constraint firstItem="S6E-Xc-E9v" firstAttribute="leading" secondItem="wew-4X-4B5" secondAttribute="trailing" constant="15" id="Nvy-S1-Jy7"/>
                             <constraint firstItem="t6C-J6-1ZV" firstAttribute="leading" secondItem="5iR-bD-i5S" secondAttribute="leading" constant="20" id="WZ5-xr-xFT"/>
-                            <constraint firstItem="wew-4X-4B5" firstAttribute="leading" secondItem="5iR-bD-i5S" secondAttribute="leading" constant="62" id="agV-S9-gae"/>
                             <constraint firstItem="Tmv-Mw-yVT" firstAttribute="centerX" secondItem="5iR-bD-i5S" secondAttribute="centerX" id="bAq-h3-sNq"/>
                             <constraint firstItem="Zcb-4m-ECX" firstAttribute="centerY" secondItem="wew-4X-4B5" secondAttribute="centerY" id="d61-9O-0ql"/>
                             <constraint firstItem="S6E-Xc-E9v" firstAttribute="centerY" secondItem="wew-4X-4B5" secondAttribute="centerY" id="dbg-Ai-FrD"/>
@@ -832,7 +821,7 @@ otherwise, feel free to complete your journey again!</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1d-YG-sCZ">
-                                <rect key="frame" x="-32" y="64" width="478" height="363"/>
+                                <rect key="frame" x="-31.5" y="64" width="477" height="362.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="K1d-YG-sCZ" secondAttribute="height" multiplier="187:142" id="qYd-Q0-ROW"/>
                                 </constraints>
@@ -841,7 +830,7 @@ otherwise, feel free to complete your journey again!</string>
                                 </connections>
                             </containerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="arch-alchemist" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tK4-Hg-ygd">
-                                <rect key="frame" x="125.5" y="437" width="163" height="32.5"/>
+                                <rect key="frame" x="125.5" y="436.5" width="163" height="33"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -891,11 +880,11 @@ otherwise, feel free to complete your journey again!</string>
         <segue reference="pfK-Qf-COl"/>
         <segue reference="QbG-I7-XiD"/>
         <segue reference="lY8-8f-0c7"/>
-        <segue reference="TN2-QG-LyQ"/>
-        <segue reference="ptM-1A-mFg"/>
+        <segue reference="IM8-O5-3CM"/>
+        <segue reference="Y4P-4S-JgP"/>
         <segue reference="q0q-ey-GVv"/>
         <segue reference="Vn1-kI-Jy5"/>
         <segue reference="5bB-Tj-RG3"/>
-        <segue reference="vIH-F4-TAV"/>
+        <segue reference="OfN-gr-yEh"/>
     </inferredMetricsTieBreakers>
 </document>
